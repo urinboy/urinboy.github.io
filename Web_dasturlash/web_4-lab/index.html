@@ -1,14 +1,10 @@
-<?php
-$title = "Ro`yxatga qo`shish";
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equive="X-UA-Comptible" content="ie=edge">
-        <title><?= $title; ?></title>
+        <title>Ro'yxatdan o'tish Formasi</title>
         <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   
@@ -22,7 +18,7 @@ $title = "Ro`yxatga qo`shish";
           <nav aria-label="breadcrumb" class="main-breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/">Asosiy</a></li>
-              <li class="breadcrumb-item active"><a href="/forma"><?= $title; ?></a></li>
+              <li class="breadcrumb-item active"><a href="/Web_dasturlash/web_4-lab/">Ro'yxatdan o'tish Formasi</a></li>
             </ol>
           </nav>
           <!-- /Breadcrumb -->
@@ -47,7 +43,7 @@ $title = "Ro`yxatga qo`shish";
             <div class="col-md-8">
               <div class="card mb-3">
                 <div class="card-body">
-<h3 class="text-center"><?= $title; ?></h3>
+<h3 class="text-center">Ro'yxatdan o'tish Formasi</h3>
                   <div class="container">
 <div class="alert alert-danger text-center">*  yulduzchali kataklar to'ldirilishi shart!</div>
             <form action="proinfo.html" method="post">
@@ -65,12 +61,13 @@ $title = "Ro`yxatga qo`shish";
                 <input type="number" name="yosh" id="yosh" placeholder=" ">
                 <label form="yosh">Yosh <font color="red">* </font></label>
             </div>
+            <div class="input-group">
             <select class="input" name="sex" id="sex" title="Jinsi">
               <option value="0">Tanlang</option>
               <option value="1">Ayol</option>
               <option value="2">Erkak</option>
             </select><br>
-          
+            </div>
             <div class="input-group">
                 <input type="email" name="email" id="email" placeholder=" " >
                 <label form="email">Email <font color="red">* </font></label>
