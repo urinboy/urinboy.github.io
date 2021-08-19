@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HomeWork CSS 4 - dars">
+    <meta name="keywords" content="html, css, homework">
+    <meta name="author" content="Tursunboyev O'rinboy">
+    <title>HomeWork 7 | CSS 4 - dars</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!---- Sarlavha ---->
+        <div class="title">
+            <h1>HomeWork 7</h1>
+            <h2>HTML & CSS 4-dars</h2>
+            <h2>(Formalar va Jadvallar)</h2>
+        </div>
+        <!-- Talabalar ma'lumot -->
+        <h4>Talabalar ma'lumoti</h4>
+        <!-- Start table -->
+        <table>
+            <!-- Jadval bosh qismi -->
+            <thead>
+                <tr height="30">
+                    <th>F.I.O</th>
+                    <th>Hozirgi ish yoki o'qish joyi</th>
+                    <th>Tel raqam</th>
+                    <th>Elektron pochta</th>
+                </tr>
+            </thead>
+            <!-- Jadval tana qismi -->
+
+            <tbody>
+                <!-- Foydalanuvchilar ma'lumoti -->
+                <tr>
+                    <td>Tursunboyev O'rinboy</td>
+                    <td>TATU Nukus filiali (talaba)</td>
+                    <td><a href="tel:+998913731196">+998913731196</a></td>
+                    <td><a href="urinboytursunboev@gmail.com">urinboytursunboev@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Tlemisov Yunusbek</td>
+                    <td>TATU Nukus filiali (talaba)</td>
+                    <td><a href="+998932086264">+998932086264</a></td>
+                    <td><a href="yunusbektlemisov@gmail.com">yunusbektlemisov@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Yuldoshev Dastonbek</td>
+                    <td>TATU Nukus filiali (talaba)</td>
+                    <td><a href="+998937196699">+998937196699</a></td>
+                    <td><a href="dastonbekyuldoshev@gmail.com">dastonbekyuldoshev@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Murataliyev Avazbek</td>
+                    <td>TATU Nukus filiali (talaba)</td>
+                    <td><a href="+998939320324">+998939320324</a></td>
+                    <td><a href="avazbekmurataliev@gmail.com">avazbekmurataliev@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Qurbobayev Zafar</td>
+                    <td>TATU Nukus filiali (talaba)</td>
+                    <td><a href="+998945991770">+998945991770</a></td>
+                    <td><a href="zafarqurbobayev@gmail.com">zafarqurbobayev@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Karimov Asror</td>
+                    <td>TATU Nukus filiali (talaba)</td>
+                    <td><a href="+998913723412">+998913723412</a></td>
+                    <td><a href="asrorkarimov@gmail.com">asrorkarimov@gmail.com</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="#" method="GET" class="forma">
+
+            <!-- Talaba qo'shish formasi -->
+            <h4>Talaba qo'shish formasi</h4>
+
+            <div class="row">
+                <input type="text" id="ism" name="ism" class="input" placeholder="Ismni kiriting" required>
+
+                <input type="text" id="familiya" name="familiya" class="input" placeholder="Familiyani kiriting" required>
+            </div>
+            <div class="row">
+                <label for="erkak" class="input">
+                        <input type="radio" id="erkak" name="jinsi" value="erkak" required>  Erkak</label>
+                <label for="ayol" class="input">
+                        <input type="radio" id="ayol" name="jinsi" value="ayol" required> Ayol</label>
+                <input type="date" name="sana" id="sana" class="date" required>
+
+            </div>
+            <div class="row">
+                <input type="text" id="oliygoh" name="oliygoh" class="input" placeholder="Oliy gohni kiriting" required>
+                <!-- Viloyat nomlari namunalar beti -->
+                <datalist id="viloyat_name">
+                    <option>Andijon viloyati</option>
+                    <option>Buxoro viloyati</option>
+                    <option>Farg'ona viloyati</option>
+                    <option>Jizzax viloyati</option>
+                    <option>Xorazm viloyati</option>
+                    <option>Namangan viloyati</option>
+                    <option>Navoiy viloyati</option>
+                    <option>Qashqadaryo viloyati</option>
+                    <option>Qoraqalpog'iston Respublikasi</option>
+                    <option>Samarqand viloyati</option>
+                    <option>Sirdaryo viloyati</option>
+                    <option>Surxandaryo viloyati</option>
+                    <option>Toshkent viloyati</option>
+                    <option>Toshkent shahti</option>
+                </datalist>
+                <input type="text" list="viloyat_name" name="viloyat" id="viloyat" class="input" placeholder="Qaysi viloyatdan?" required>
+            </div>
+            <div class="row">
+                <input type="tel" id="tel" name="tel" class="input" placeholder="+998913731196" required>
+                <input type="email" id="email" name="email" class="input" placeholder="namuna@umail.uz" required>
+            </div>
+            <!-- Talaba haqida ma'lumot uchun -->
+            <div class="row">
+                <textarea id="xabar" class="text" placeholder="Talaba haqida" required></textarea>
+            </div>
+            <button type="submit" class="submit">Kiritish</button>
+        </form>
+        <div class="copy">
+            &copy; 2021 Tursunboyev O'rinboy
+        </div>
+    </div>
+</body>
+
+</html>

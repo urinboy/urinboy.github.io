@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HomeWork 3 - Formalar | Tursunboyev O'rinboy</title>
+	</head>
+	<body>
+		<!---- Sarlavha ---->
+		<h1 align="center">HomeWork 3 | HTML (Formalar)</h1>
+				
+		<table border="1" align="center" cellpadding="20" cellspacing="0" width="480">
+			<tr>
+				<td>
+					<!--- Vedmost jadvali --->
+					<h3 align="center">Ma'lomotlar formasi</h3>
+					<!--- Forma --->
+					<form action="" method="post" align="">
+						<fieldset>
+							<legend>Shaxsiy ma'lumoti:</legend>
+							<!--- Ism uchun --->
+							<p>
+								<label for="ism">Ismingiz :</label>
+								<input type="text" id="ism" name="ism" placeholder="O'rinboy" size="40" width="80px">
+							</p>
+							<!--- Familiya uchun --->
+							<p>
+								<label for="familiya">Familiya : </label>
+								<input type="text" id="familiya" name="familiya" placeholder="Tursunboyev" size="40" width="80px">
+							</p>
+							<!--- Pasport uchun --->
+							<p>
+								<label for="pasport">Pasport SR : </label>
+								<input type="text" id="pasport" name="pasport" placeholder="KA1234567" size="38" maxlength="9">
+							</p>
+						</fieldset>
+						<br>
+						<fieldset>
+							<legend>Manzil, oilaviy holati, ma'lumoti:</legend>
+							<!--- Tumanni tanlash uchun --->
+							<p>
+								<label for="viloyat">Viloyat : </label>
+								<select id="viloyat" name="viloyat">
+									<option value="Andijon">Andijon viloyati</option>
+									<option value="Buxoro">Buxoro viloyati</option>
+									<option value="Farg'ona">Farg'ona viloyati</option>
+									<option value="Jizzax">Jizzax viloyati</option>
+									<option value="Xorazm">Xorazm viloyati</option>
+									<option value="Namangan">Namangan viloyati</option>
+									<option value="Navoiy">Navoiy viloyati</option>
+									<option value="Qashqadaryo">Qashqadaryo viloyati</option>
+									<option value="Qoraqalopog'iston">Qoraqalopog'iston Respublikasi</option>
+									<option value="Samarqand">Samarqand viloyati</option>
+									<option value="Sirdaryo">Sirdaryo viloyati</option>
+									<option value="Surxandaryo">Surxandaryo viloyati</option>
+									<option value="Toshkent">Toshkent viloyati</option>
+									<option value="Toshkent_Shahri">Toshkent Shahri</option>
+								</select>
+							</p>
+							<p>
+								<!--- Turmushni bilish uchun --->
+								<label>Turmush qurganmisiz?</label>
+								<label><input type="radio" name="married" value="ha"> Ha </label>
+								<label><input type="radio" name="married" value="yoq"> Yo'q</label>
+							</p>
+							
+							<p>
+								<!--- Ta'limni bilish uchun --->
+								<label>Qaysi ta'lim dargohlarida ta'lim olgansiz?</label><br>
+								<label><input type="checkbox" name="edu" value="Bogcha"> Bog'cha </label><br>
+								<label><input type="checkbox" name="edu" value="Maktab"> Maktab</label><br>
+								<label><input type="checkbox" name="edu" value="Kollej" disabled> Kollej</label><br>
+								<label><input type="checkbox" name="edu" value="Litsey" disabled> Litsey</label><br>
+								<label><input type="checkbox" name="edu" value="Institut"> Institut</label><br>
+								<label><input type="checkbox" name="edu" value="Universitet"> Universitet</label><br>
+							</p>
+						</fieldset>
+						<!--- Xabar uchun --->
+						<p>
+							<label for="xabar">Xabar yo'llash:</label><br>
+							<textarea id="xabar" name="xabar" placeholder="Xabar matnini kiriting!" cols="60" rows="10"></textarea>
+						</p>
+						<!--- Yuborish tugmasi --->
+						<p>
+							<button type="submit">Yuborish</button>
+						</p>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

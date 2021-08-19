@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="uz">
+	<head>
+	<!-- Meta teglar -->
+	<meta charset="utf-8">
+	<meta name="description" content="HomeWork 4 | HTML 4 & CSS">
+	<meta name="keywords" content="html,homework,css">
+	<!-- Sahifa sarlavhasi -->
+	<title>HomeWork 4 | HTML 4 & CSS</title>
+	<!-- Sahifaga biriktirilgan css -->
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- Container booshi -->
+		<div class="container">
+			<!-- Mavzu va vazifa bajaruvchi nomi  -->
+			<h1 class="title">HomeWork 4 | HTML 4-dars & CSS</h1>
+			<h3 class="author">Tursunboyev O'rinboy</h3>
+			<!-- Card yani forma joylashgan qism -->
+			<div class="card">
+				<!-- Forma sarlavhasi -->
+				<h2 class="title">Foydalanuvchi ma'lumoti</h2>
+				<!-- Forma boshi -->
+				<form action="#" method="post">
+					<!-- Ism uchun -->
+					<p>
+						<label for="ism">Ism :</label>
+						<input type="text" name="ism" id="ism" class="input" placeholder="Ismingizni kiriting!" required>
+					</p>
+					<!-- Familiya uchun -->
+					<p>
+						<label for="familiya">Familiya :</label>
+						<input type="text" name="familiya" id="familiya" class="input" placeholder="Familiyangizni kiriting!" required>
+					</p>
+					<!-- Tel raqam uchun -->
+					<p>
+						<label for="tel">Tel raqam :</label>
+						<input type="tel" name="tel" id="tel" class="input" placeholder="+998913731196" required>
+					</p>
+					<!-- Email uchun -->
+					<p>
+						<label for="email">Email :</label>
+						<input type="email" name="email" id="email" class="input" placeholder="urinboytursunboev@gmail.com" required>
+					</p>
+					<!-- Viloyat uchun -->
+					<p>
+						<!-- Viloyat nomlari namunalar beti -->
+						<datalist id="viloyat_name">
+							<option>Andijon viloyati</option>
+							<option>Buxoro viloyati</option>
+							<option>Farg'ona viloyati</option>
+							<option>Jizzax viloyati</option>
+							<option>Xorazm viloyati</option>
+							<option>Namangan viloyati</option>
+							<option>Navoiy viloyati</option>
+							<option>Qashqadaryo viloyati</option>
+							<option>Qoraqalpog'iston Respublikasi</option>
+							<option>Samarqand viloyati</option>
+							<option>Sirdaryo viloyati</option>
+							<option>Surxandaryo viloyati</option>
+							<option>Toshkent viloyati</option>
+							<option>Toshkent shahti</option>
+						</datalist>
+						<label for="viloyat">Viloyat :</label>
+						<input type="text" list="viloyat_name" name="viloyat" id="viloyat"  class="input" placeholder="Viloyatni kiriting!" required>
+					</p>
+					<!-- Sana va vaqt uchun -->
+					<p>
+						<label for="sana">Sana va vaqti :</label>
+						<input type="time" name="vaqt" id="vaqt" class="time" required>
+						<input type="date" name="sana" id="sana" class="date" required>
+					</p>
+					<!-- Xabar qoldirish uchun -->
+					<p>
+						<label for="xahar">Xabar :</label>
+						<textarea id="xabar" rows="4" cols="50"  class="text" maxlength="255" placeholder="Xabar matnini kiriting!" required></textarea>
+					</p>
+					<!-- Yuborish tugmasi -->
+					<p>
+						<button  type="submit" class="button-29" role="submit">Yuborish</button>
+					</p>
+				</form>
+				<!-- Forma oxiri -->
+			</div>
+			<!-- Card oxiri -->
+		</div>
+		<!-- Container oxiri -->
+	</body>
+</html>
