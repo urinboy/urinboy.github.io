@@ -1,0 +1,65 @@
+@font-face{
+	font-family: 'Oswald-Regular';
+	src: url('../fonts/Oswald-Regular.ttf');
+}
+@font-face{
+	font-family: 'Oswald-Bold';
+	src: url('../fonts/Oswald-Bold.ttf');
+}
+@font-face{
+	font-family: 'Oswald-SemiBold';
+	src: url('../fonts/Oswald-SemiBold.ttf');
+}
+@font-face{
+	font-family: 'Montserrat-Regular';
+	src: url('../fonts/Montserrat-Regular.ttf');
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Montserrat-Regular';
+	font-size: 25px;
+}
+.container{
+	width: 1300px;
+	margin: 0 auto;
+}
+.button{
+	padding: 18px 80px;
+	font-size: 29px;
+	font-family: 'Oswald-Regular';
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 8px;
+}
+.button.button_orange{
+	background-color: #e8631c;
+}
+header{
+	background-color: #303030;
+	padding: 18px 0;
+}
+header .header_block{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+.header_block nav ul{
+	list-style: none;
+	display: flex;
+}
+.header_block nav ul li{
+	margin-left: 55px;
+}
+.header_block nav ul li a{
+	font-family: 'Oswald-Regular';
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
