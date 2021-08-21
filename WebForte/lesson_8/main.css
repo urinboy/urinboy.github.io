@@ -8,8 +8,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  background-image: url('images/bg.png');
+  background-color: #000;
+  background-image: url('images/connected.png');
   font-size: 15px;
   font-family: Verdana;
 }
@@ -28,7 +28,7 @@ body{
   justify-content: center;
   align-items: center;
   background-color: #F2AB29;
-  background-image: url('images/hb.png');
+  background-image: url('images/crisp-paper-ruffles.png');
   text-align: center;
 }
 .content{
@@ -53,4 +53,5 @@ p{
   position: fixed;
   bottom: 0;
   right: 0;
+  width: 200px;
 }
