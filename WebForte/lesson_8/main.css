@@ -48,6 +48,7 @@ h3, p, .boxes{
 }
 p{
   font-size: 13px;
+  text-align: justify;
 }
 .cat{
   position: fixed;
