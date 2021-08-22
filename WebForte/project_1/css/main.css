@@ -1,9 +1,9 @@
 @font-face{
-	font-family: 'Oswald-Regular';
+	font-family: 'oswald-regular';
 	src: url('../fonts/Oswald-Regular.ttf');
 }
 @font-face{
-	font-family: 'Oswald-Bold';
+	font-family: 'oswald-bold';
 	src: url('../fonts/Oswald-Bold.ttf');
 }
 @font-face{
@@ -11,25 +11,28 @@
 	src: url('../fonts/Oswald-SemiBold.ttf');
 }
 @font-face{
-	font-family: 'Montserrat-Regular';
+	font-family: 'montserrat';
 	src: url('../fonts/Montserrat-Regular.ttf');
 }
 *{
 	margin: 0;
 	padding: 0;
 }
+
 body{
-	font-family: 'Montserrat-Regular';
+	font-family: 'montserrat';
 	font-size: 25px;
 }
+
 .container{
 	width: 1300px;
 	margin: 0 auto;
 }
+
 .button{
 	padding: 18px 80px;
 	font-size: 29px;
-	font-family: 'Oswald-Regular';
+	font-family: 'oswald-regular';
 	color: #fff;
 	display: inline-block;
 	text-decoration: none;
@@ -44,11 +47,13 @@ header{
 	padding: 18px 0;
 }
 header .header_block{
+	/*padding: 18px 0px;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: center;
 }
+
 .header_block nav ul{
 	list-style: none;
 	display: flex;
@@ -57,8 +62,8 @@ header .header_block{
 	margin-left: 55px;
 }
 .header_block nav ul li a{
-	font-family: 'Oswald-Regular';
-	font-size: 25px;
+	font-family: 'oswald-regular';
+	font-size: 20px;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
