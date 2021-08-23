@@ -189,7 +189,7 @@ h2, h3, h4, footer{
   align-items: center;
   text-align: center;
 }
-@media screen and (max-width: 927px) {
+@media screen and (max-width: 947px) {
 
 html{
     font-size: 55%;
