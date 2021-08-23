@@ -49,24 +49,22 @@ nav .mainMenu li a{
   display: inline-block;
   padding: 16px;
   text-decoration: uppercase;
-  font-size: 1.1rem;
+  font-size: 18px;
   color: #021C56;
   font-weight: 600;
 }
 nav .mainMenu li a:active{
   width: 100%;
   background-color: #021C56;
-  font-size: 32px;
+  font-size: 18px;
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 nav .mainMenu li a:hover{
-  border: 1px solid #021C56;
   width: 100%;
-  padding: 22px;
-  font-size: 22px;
+  background-color: #021C56;
+  font-size: 18px;
+  color: #fff;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 nav .openMenu{
   font-size: 2rem;
