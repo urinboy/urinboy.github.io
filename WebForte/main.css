@@ -49,20 +49,20 @@ nav .mainMenu li a{
   display: inline-block;
   padding: 16px;
   text-decoration: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   color: #021C56;
   font-weight: 600;
 }
 nav .mainMenu li a:active{
   width: 100%;
   background-color: #021C56;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 }
 nav .mainMenu li a:hover{
   width: 100%;
   background-color: #021C56;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   border-radius: 15px;
 }
