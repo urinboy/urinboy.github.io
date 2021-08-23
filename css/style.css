@@ -11,7 +11,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
 }
 
@@ -581,7 +581,7 @@ svg circle:nth-child(2){
     body{
         padding-right: 0;
     }
-    
+
     section{
         padding:2rem;
     }
@@ -608,7 +608,7 @@ svg circle:nth-child(2){
         padding: 0;
         font-size: 24px;
     }
-    
+
 
 }
 
