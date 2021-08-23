@@ -194,10 +194,6 @@ h2, h3, h4, footer{
 }
 @media screen and (max-width: 927px) {
 
-  #menu-bars{
-      display: inline-block;
-  }
-
 html{
     font-size: 55%;
 }
@@ -210,9 +206,7 @@ section{
     padding:2rem;
 }
 header{
-  /* display: none; */
   top: 9rem;
-  /* z-index: 5; */
 }
 .title{
   position: relative;
@@ -264,7 +258,7 @@ nav .mainMenu li a:hover{
 .work, .course{
   width: 100%;
   height: 70px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .container{
   width: 95%;
