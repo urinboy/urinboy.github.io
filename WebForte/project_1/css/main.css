@@ -7,7 +7,7 @@
 	src: url('../fonts/Oswald-Bold.ttf');
 }
 @font-face{
-	font-family: 'Oswald-SemiBold';
+	font-family: 'oswald-semiBold';
 	src: url('../fonts/Oswald-SemiBold.ttf');
 }
 @font-face{
@@ -18,18 +18,27 @@
 	margin: 0;
 	padding: 0;
 }
-
+:root {
+	--orade: #e8631c;
+	--dark: #303030;
+	--white: #fff;
+}
 body{
+	margin: 0 auto;
 	font-family: 'montserrat';
 	font-size: 25px;
 }
-
+.wrapper{
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 80px 0 80px;
+}
 .container{
 	width: 1300px;
 	margin: 0 auto;
 }
 
-.button{
+.btn{
 	padding: 18px 80px;
 	font-size: 29px;
 	font-family: 'oswald-regular';
@@ -39,12 +48,11 @@ body{
 	text-transform: uppercase;
 	border-radius: 8px;
 }
-.button.button_orange{
+.orange{
 	background-color: #e8631c;
 }
-header{
+.dark{
 	background-color: #303030;
-	padding: 18px 0;
 }
 header .header_block{
 	padding: 18px 0px;
@@ -52,6 +60,7 @@ header .header_block{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: center;
+	background-color: var(--dark);
 }
 
 .header_block nav ul{
@@ -67,4 +76,53 @@ header .header_block{
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+nav ul li, .search{
+	margin-top: 20px;
+}
+.here{
+	height: 695px;
+	margin: 0 auto;
+	background-image: url("../images/block_title.png");
+	background-repeat: no-repeat;
+}
+.here .here_title{
+	margin-top: 270px;
+}
+.section{
+	max-height: 962px;
+}
+.section .section_title{
+	color: var(--white);
+	font-size: 75px;
+	font-family: 'oswald-bold';
+	text-transform: uppercase;
+	text-align: center;
+}
+.section .section_description{
+	font-size: 30px;
+	font-family: 'montserrant';
+	text-align: center;
+}
+.card{
+	width: 378px;
+	height: 498px;
+	text-align: center;
+	border-radius: 10px;
+}
+.card .img{
+	height: 330px;
+}
+.card .card_title{
+	text-align: center;
+	font-family: 'oswald-regular';
+	font-size: 36px;
+	text-transform: uppercase;
+	color: var(--white);
+}
+.card .card_description{
+	text-align: center;
+	font-family: 'montserrant';
+	font-size: 22px;
+	color: var(--white);
 }
