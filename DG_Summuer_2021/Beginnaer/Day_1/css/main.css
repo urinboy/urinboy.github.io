@@ -279,21 +279,21 @@ a.link_home:hover, a.active{
 }
 .works_block{
   position: relative;
-  height: 220px;
+  top: 10px;
+  height: 240px;
   display: flex;
-  padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
 .work_img img{
   position: relative;
-  top:10px;
+  top:30px;
   width: 246px;
   height: 180px;
   border-radius: 6px;
 }
 .work_title{
   position: relative;
-  top:-180px;
+  top:-165px;
   left:270px;
   width: 405px;
   height: 44px;
@@ -313,7 +313,7 @@ a.link_home:hover, a.active{
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -135px;
+  top: -115px;
   left: -135px;
   width: 82px;
   height: 25px;
@@ -329,7 +329,7 @@ a.link_home:hover, a.active{
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -135px;
+  top: -115px;
   left: -235px;
   width: 374px;
   height: 34px;
@@ -340,8 +340,9 @@ a.link_home:hover, a.active{
 }
 .work{
   position: relative;
-  top: -105px;
+  top: -85px;
   left: 270px;
+  margin-bottom: 20px;
   width: 594px;
   height: 93px;
   font-weight: normal;
@@ -354,17 +355,21 @@ a.link_home:hover, a.active{
   margin: 0 auto;
 }
 .blogs .title{
+  position: relative;
+  top: 60px;
+  left: -365px;
   width: 156px;
   height: 54px;
-  margin: 90px auto;
+  margin: 80px auto;
   font-weight: bold;
-  font-size: 44px;
+  font-size: 30px;
   line-height: 60px;
   color: var(--dark);
 }
 footer{
   position: relative;
-  height:  165px;
+  top: 110px;
+  height:  260px;
   margin-bottom: 30px;
 }
 footer .social{
