@@ -410,6 +410,14 @@ footer .copy{
 }
 
 @media screen and (max-width: 947px) {
+  html{
+      font-size: 55%;
+  }
+
+  body{
+      padding-right: 0;
+  }
+
   nav{
     margin: 0 auto;
   }

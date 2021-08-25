@@ -1,0 +1,133 @@
+/*
+* Musicology UI WebForte Web Sayt uchun dizayn
+* Webforte Akademiyasi 2021
+* FrontEnd Sinov oyligi
+* Project 1
+* Bajaruvchi: Tursunboyev O'rinboy
+*/
+/* Font-family */
+@font-face{
+	font-family: 'oswald-regular';
+	src: url('../fonts/Oswald-Regular.ttf');
+}
+@font-face{
+	font-family: 'oswald-bold';
+	src: url('../fonts/Oswald-Bold.ttf');
+}
+@font-face{
+	font-family: 'oswald-semiBold';
+	src: url('../fonts/Oswald-SemiBold.ttf');
+}
+@font-face{
+	font-family: 'montserrat';
+	src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+:root{
+  --dark: #303030;
+  --orange: #e8631c;
+  --bg: #fefefe;
+  --osreg: 'oswald-regular';
+  --osbold: 'oswald-bold';
+  --ossembold: 'oswald-semiBold';
+  --mont: 'montserrat';
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  position: relative;
+  background-color: var(--bg);
+  margin: 0 auto;
+}
+body{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 25px
+}
+.container{
+  position: relative;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 74px;
+  /* width: 91.7%; */
+}
+.btn{
+  width: 325px;
+  padding: 16px 80px 17px 83px;
+  border-radius: 8px;
+}
+.btn_orange{
+  background-color: var(--orange);
+}
+nav{
+  position: fixed;
+  background-color: var(--dark);
+  width: 100%;
+  z-index: 5;
+  /* height: 100px; */
+}
+.nav_block{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+.nav_block>ul{
+  list-style: none;
+  display: flex;
+}
+.nav_block>ul>li{
+  margin-left: 55px;
+}
+.nav_block>ul>li>a{
+  font-family: var(--osreg);
+  color: #fff;
+  text-transform: uppercase;
+}
+.here_section{
+  position: relative;
+  width: 100%;
+  height: 740px;
+  background-image: url('../images/header-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.here_title{
+  position: relative;
+  padding-top: 285px;
+	color: #fff;
+	font-size: 100px;
+  font-weight: normal;
+	font-family: var(--osreg);
+}
+.here_info{
+  position: relative;
+  width: 615px;
+  margin-bottom: 47px;
+  font-size: 30px;
+  font-family: var(--mont);
+  color: #fff;
+}
+.here_section a{
+  font-size: 30px;
+  font-family: var(--osreg);
+  color:#fff;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.here_section a:active{
+  background-color: var(--orange);
+  transition: .5s;
+}
+.here_section a:hover{
+  background-color: inherit;
+  border: 3px solid var(--orange);
+  transition: .5s;
+}
