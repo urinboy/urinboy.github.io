@@ -68,6 +68,7 @@ body{
   width: 325px;
   padding: 14px 80px 15px 83px;
   border-radius: 8px;
+  font-family: var(--osreg);
 }
 .btn_orange, .orange{
   background-color: var(--orange);
@@ -75,7 +76,9 @@ body{
 .btn_dark, .dark{
   background-color: var(--dark);
 }
-
+.radius{
+  border-radius: 8px;
+}
 /* Navigatsiya bo'limi */
 
 nav{
@@ -108,9 +111,11 @@ nav{
 }
 
 /* HereSection qismi */
-.here_section, .tour_section{
-  position: relative;
-  width: 100%;}
+.here_section,
+.tour_section,
+.price_section{
+  width: 100%;
+}
 .here_section{
   height: 740px;
 }
@@ -151,12 +156,12 @@ nav{
   transition: .5s;
 }
 
-/* TourSection */
-.tour_section{
+/* Sections */
+.tour_section,
+.price_section,
+.amazing_section{
   height: 965px;
 }
-.tour_card{
-  }
 
 /* Section uchun parametrlar */
 
@@ -165,7 +170,7 @@ nav{
   margin-bottom: 55px;
   padding-top: 105px;
 	font-size: 75px;
-	font-family: var(--osreg);
+	font-family: var(--ossembold);
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -177,18 +182,23 @@ nav{
 	text-align: center;
 }
 .section_block{
-  position: relative;
-  margin-top: 30px;
+  margin-top: 85px;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
 }
 .section_block_item{
+  height: 465px;
   flex: 0 0 auto;
   width: 31%;
 }
 .section_block_item img{
   width: 100%;
+}
+.section_block_item img.icon{
+  width: 30%;
+  top: 65px;
+  left: 120px;
 }
 .section_block_item .title,
 .section_block_item .info{
@@ -196,14 +206,31 @@ nav{
 }
 .section_block_item .title{
   margin-top: 26px;
-  font-family: var(--osreg);
+  font-family: var(--ossembold);
   font-size: 36px;
   font-weight: normal;
 }
-
-
 .section_block_item .info{
   margin: 20px auto;
   font-family: var(--mont);
   font-size: 20px;
+}
+.price_t{
+  top: 65px;
+  font-family: var(--semiBold);
+  text-transform: uppercase;
+}
+.price_i{
+  top: 65px;
+}
+.section_block_item>a.btn_dark{
+  top: 80px;
+  left:45px;
+  width: 450px;
+}
+.section_block_item>a.btn_dark:hover{
+  background-color: inherit;
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  transition: .3s;
 }
