@@ -5,7 +5,8 @@
 * Project 1
 * Bajaruvchi: Tursunboyev O'rinboy
 */
-/* Font-family */
+
+/* Google fonts  Font-family */
 @font-face{
 	font-family: 'oswald-regular';
 	src: url('../fonts/Oswald-Regular.ttf');
@@ -22,7 +23,9 @@
 	font-family: 'montserrat';
 	src: url('../fonts/Montserrat-Regular.ttf');
 }
+
 /* Asosiy o'zgaruvchilar */
+
 :root{
   --dark: #303030;
   --orange: #e8631c;
@@ -32,42 +35,49 @@
   --ossembold: 'oswald-semiBold';
   --mont: 'montserrat';
 }
+
 /* Umumiy parametrlar */
+
 *{
+  position: relative;
   margin: 0;
   padding: 0;
+  color: #fff;
   box-sizing: border-box;
   text-decoration: none;
 }
 html{
-  position: relative;
   background-color: var(--bg);
   margin: 0 auto;
 }
 body{
-  position: relative;
   width: 100%;
   margin: 0 auto;
   font-size: 25px
 }
 .container{
-  position: relative;
-  width: 1300px;
+  width: 1305px;
   margin: 0 auto;
   padding: 0 74px;
   /* width: 91.7%; */
 }
+
+/* Tugmalarning umumiy parametri */
+
 .btn{
   width: 325px;
   padding: 14px 80px 15px 83px;
   border-radius: 8px;
 }
-.btn_orange{
+.btn_orange, .orange{
   background-color: var(--orange);
 }
-
+.btn_dark, .dark{
+  background-color: var(--dark);
+}
 
 /* Navigatsiya bo'limi */
+
 nav{
   position: fixed;
   background-color: var(--dark);
@@ -91,7 +101,6 @@ nav{
 }
 .nav_block>ul>li>a{
   font-family: var(--osreg);
-  color: #fff;
   text-transform: uppercase;
 }
 .nav_block>ul>li>a:hover{
@@ -99,10 +108,14 @@ nav{
 }
 
 /* HereSection qismi */
-.here_section{
+.here_section, .tour_section{
   position: relative;
-  width: 100%;
+  width: 100%;}
+.here_section{
   height: 740px;
+}
+
+.here_section{
   background-image: url('../images/header-1.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,7 +123,6 @@ nav{
 .here_title{
   position: relative;
   padding-top: 285px;
-	color: #fff;
 	font-size: 100px;
   font-weight: normal;
 	font-family: var(--osreg);
@@ -121,12 +133,11 @@ nav{
   margin-bottom: 47px;
   font-size: 30px;
   font-family: var(--mont);
-  color: #fff;
 }
 .here_section a{
+  position: relative;
   font-size: 30px;
   font-family: var(--osreg);
-  color:#fff;
   text-transform: uppercase;
   transition: .3s;
 }
@@ -138,4 +149,61 @@ nav{
 .here_section a:active{
   background-color: var(--dark);
   transition: .5s;
+}
+
+/* TourSection */
+.tour_section{
+  height: 965px;
+}
+.tour_card{
+  }
+
+/* Section uchun parametrlar */
+
+.section_title{
+  position: relative;
+  margin-bottom: 55px;
+  padding-top: 105px;
+	font-size: 75px;
+	font-family: var(--osreg);
+	text-transform: uppercase;
+	text-align: center;
+}
+.section_description{
+  width: 845px;
+  margin: 0 auto;
+	font-size: 30px;
+	font-family: var(--mont);
+	text-align: center;
+}
+.section_block{
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.section_block_item{
+  flex: 0 0 auto;
+  width: 31%;
+}
+.section_block_item img{
+  width: 100%;
+}
+.section_block_item .title,
+.section_block_item .info{
+  text-align: center;
+}
+.section_block_item .title{
+  margin-top: 26px;
+  font-family: var(--osreg);
+  font-size: 36px;
+  font-weight: normal;
+}
+
+
+.section_block_item .info{
+  margin: 20px auto;
+  font-family: var(--mont);
+  font-size: 20px;
 }
