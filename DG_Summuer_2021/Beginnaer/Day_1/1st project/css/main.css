@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  padding: 12px;
+  text-align: right;
+  border-bottom: 1px solid #111;
+}
+.menu_item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  margin-right: 25px;
+  font-family: "Heebo", sans-serif;
+}
+.avatar_image {
+  border-radius: 50%;
+}
+header {
+  text-align: center;
+  padding: 75px 17%;
+}
+.title {
+  color: #333;
+  font-weight: 500;
+  font-family: "Heebo", sans-serif;
+}
+.main_button {
+  background: #ffa32b;
+  padding: 16px 24px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  font-family: "Heebo", sans-serif;
+}
