@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px) {
+    .post{
+        width: 100%;
+
+    }
+    .posts-wrapper{
+        flex-direction: column;
+    }
+    .posts-wrapper>.post{
+        margin-top: 20px;
+    }
+    .posts>.head{
+        margin: 0;
+        width: 100%;
+    }
+    .posts>.head>.link{
+        margin: 0;
+    }
+    .posts{
+        padding-top: 20px;
+    }
+    .featured{
+        margin-top: 40px;
+    }
+    .featured-wrapper>.content{
+        width: 70%;
+    }
+    .posts-holder>.post{
+        flex-direction: column;
+    }
+    .post>.img-wrapper{
+        width: 100%;
+    }
+    .post>.text-wrapper{
+        width: 100%;
+    }
+    .text-wrapper h1{
+        font-size: 22px;
+    }
+    .text-wrapper p{
+        font-size: 18px;
+    }
+    footer>.content{
+        width: 75%;
+    }
+    footer .fab{
+        font-size: 35px;
+    }
+    .credit{
+        width: 100%;
+    }
+}
