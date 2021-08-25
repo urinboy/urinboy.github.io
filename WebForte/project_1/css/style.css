@@ -234,3 +234,23 @@ nav{
   border: 2px solid var(--dark);
   transition: .3s;
 }
+.amazing_section{
+  display: flex;
+}
+.amazing_img,
+.amazing_info{
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.amazing_info{
+  padding: 280px 0 312px 0;
+}
+.amazing_img{
+  background-image: url(../images/amazing_dance.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 947px) {
+  /* HALI RESPONSIV EMAS */
+}
