@@ -22,7 +22,7 @@
 	font-family: 'montserrat';
 	src: url('../fonts/Montserrat-Regular.ttf');
 }
-
+/* Asosiy o'zgaruvchilar */
 :root{
   --dark: #303030;
   --orange: #e8631c;
@@ -32,6 +32,7 @@
   --ossembold: 'oswald-semiBold';
   --mont: 'montserrat';
 }
+/* Umumiy parametrlar */
 *{
   margin: 0;
   padding: 0;
@@ -58,18 +59,20 @@ body{
 }
 .btn{
   width: 325px;
-  padding: 16px 80px 17px 83px;
+  padding: 14px 80px 15px 83px;
   border-radius: 8px;
 }
 .btn_orange{
   background-color: var(--orange);
 }
+
+
+/* Navigatsiya bo'limi */
 nav{
   position: fixed;
   background-color: var(--dark);
   width: 100%;
   z-index: 5;
-  /* height: 100px; */
 }
 .nav_block{
   position: relative;
@@ -91,6 +94,11 @@ nav{
   color: #fff;
   text-transform: uppercase;
 }
+.nav_block>ul>li>a:hover{
+  color: #fff;
+}
+
+/* HereSection qismi */
 .here_section{
   position: relative;
   width: 100%;
@@ -122,12 +130,12 @@ nav{
   text-transform: uppercase;
   transition: .3s;
 }
-.here_section a:active{
-  background-color: var(--orange);
-  transition: .5s;
-}
 .here_section a:hover{
   background-color: inherit;
   border: 3px solid var(--orange);
+  transition: .5s;
+}
+.here_section a:active{
+  background-color: var(--dark);
   transition: .5s;
 }
