@@ -21,9 +21,14 @@
   font-style: normal;
   text-decoration: none;
 }
-body{
+html{
   background-color: #eee;
+  
+}
+body{
+  width: 1152px;
   font-family: var(--font-heebo);
+  background-color: #eee;
 }
 .wrapper{
   width: 1152px;
