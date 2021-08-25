@@ -350,7 +350,7 @@ a.link_home:hover, a.active{
   color: var(--dark);
 }
 .blogs{
-  width: auto;
+  width: 100%;
   margin: 0 auto;
 }
 .blogs .title{
