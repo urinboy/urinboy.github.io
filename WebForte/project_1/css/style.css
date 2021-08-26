@@ -188,17 +188,17 @@ nav{
   padding: 0 30px;
 }
 .section_block_item{
-  height: 465px;
+  height: 445px;
   flex: 0 0 auto;
-  width: 31%;
+  width: 28%;
 }
 .section_block_item img{
   width: 100%;
 }
 .section_block_item img.icon{
   width: 30%;
-  top: 65px;
-  left: 120px;
+  top: 55px;
+  left: 110px;
 }
 .section_block_item .title,
 .section_block_item .info{
@@ -216,17 +216,16 @@ nav{
   font-size: 20px;
 }
 .price_t{
-  top: 65px;
+  top: 55px;
   font-family: var(--semiBold);
   text-transform: uppercase;
 }
 .price_i{
-  top: 65px;
+  top: 55px;
 }
 .section_block_item>a.btn_dark{
   top: 80px;
-  left:45px;
-  width: 450px;
+  left:30px;
 }
 .section_block_item>a.btn_dark:hover{
   background-color: inherit;
@@ -240,19 +239,35 @@ nav{
 .amazing_img,
 .amazing_info{
   flex: 0 0 auto;
-  width: 50%;
+  width: 48%;
 }
 
 .amazing_info{
+	width: calc(50% - 80px);
 	margin: 0 30px;
-  padding: 280px 0 312px 0;
+  padding: 250px 0 312px 0;
 }
 .amazing_img{
   background-image: url(../images/amazing_dance.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.amazing_info .section_title
+.amazing_info .section_title{
+	margin-left: 30px;
+}
+.amazing_info .section_description{
+	width: 95%;
+	font-size: 30px;
+	text-align: left;
+}
+.amazing_info .readmore{
+	position: relative;
+	top: 80px;
+	left: 30px;
+}
+.footer_block{
+	display: flex;
+}
 @media screen and (max-width: 947px) {
   /* HALI RESPONSIV EMAS */
 }
