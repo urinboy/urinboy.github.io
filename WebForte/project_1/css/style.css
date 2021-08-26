@@ -244,6 +244,7 @@ nav{
 }
 
 .amazing_info{
+	margin: 0 30px;
   padding: 280px 0 312px 0;
 }
 .amazing_img{
@@ -251,6 +252,7 @@ nav{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.amazing_info .section_title
 @media screen and (max-width: 947px) {
   /* HALI RESPONSIV EMAS */
 }
