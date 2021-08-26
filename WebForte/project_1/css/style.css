@@ -298,26 +298,32 @@ nav{
 	width: 40%;
 }
 
-.fblock, .social, .footer_links{
+.fblock, .footer_links{
 	display: flex;
 	justify-content: space-between;
 }
 .site_title{
 	margin-bottom: 20px;
-	font-size: 33.33px;
+	font-size: 30px;
 	font-family: var(--osreg);
 	text-transform: uppercase;
 }
 .site_info{
 	font-family: var(--mont);
-	font-size: 25px;
+	font-size: 22px;
+}
+.social{
+	display: flex;
+}
+.social a>img{
+	margin-right: 15px;
 }
 .item_link{
 	margin-left: 40px;
 }
 .item_link>ul>li>a{
-
-
+font-family: var(--mont);
+font-size: 22px;
 }
 
 
