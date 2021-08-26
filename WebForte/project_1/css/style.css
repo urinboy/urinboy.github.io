@@ -56,7 +56,7 @@ body{
   font-size: 25px
 }
 .container{
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
 	padding: 0 70px;
   /* width: 91.7%; */
@@ -162,7 +162,8 @@ nav{
 /* Sections */
 .tour_section,
 .price_section,
-.amazing_section{
+.amazing_section,
+.footer_block{
   height: 965px;
 }
 
@@ -191,7 +192,7 @@ nav{
   padding: 0 30px;
 }
 .section_block_item{
-  height: 428px;
+  height: 450px;
   flex: 0 0 auto;
   width: 31%;
 }
@@ -206,17 +207,18 @@ nav{
 .section_block_item .title,
 .section_block_item .info{
   text-align: center;
+	padding: 5px;
 }
 .section_block_item .title{
-  margin-top: 26px;
-  font-family: var(--ossembold);
+  margin-top: 20px;
+  font-family: var(--osreg);
   font-size: 32px;
   font-weight: normal;
 }
 .section_block_item .info{
-  margin: 18px auto;
+  margin: 10px auto;
   font-family: var(--mont);
-  font-size: 20px;
+  font-size: 18px;
 }
 .price_t{
   top: 55px;
@@ -228,7 +230,7 @@ nav{
 }
 .section_block_item>a.btn_dark{
   top: 80px;
-  left:25px;
+  left:40px;
 }
 .section_block_item>a.btn_dark:hover{
   background-color: inherit;
@@ -284,7 +286,26 @@ nav{
   transition: .5s;
 }
 .footer_block{
+	padding: 300px 0 300px 0;
 	display: flex;
+	justify-content: space-between;
+}
+.site_info,.footer_links{
+	flex: 0 0 auto;
+	width: 49%;
+}
+.social{
+	display: flex;
+}
+.site_title{
+	margin-bottom: 20px;
+	font-size: 33.33px;
+	font-family: var(--osreg);
+	text-transform: uppercase;
+}
+.site_info{
+	font-family: var(--mont);
+	font-size: 25px;
 }
 @media screen and (max-width: 947px) {
   /* HALI RESPONSIV EMAS */
