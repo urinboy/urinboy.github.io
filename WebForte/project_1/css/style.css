@@ -56,9 +56,9 @@ body{
   font-size: 25px
 }
 .container{
-  width: 1305 px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 74px;
+	padding: 0 70px;
   /* width: 91.7%; */
 }
 
@@ -93,7 +93,7 @@ nav{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
+	padding: 18px 0;
 }
 .nav_block>ul{
   list-style: none;
@@ -107,7 +107,10 @@ nav{
   text-transform: uppercase;
 }
 .nav_block>ul>li>a:hover{
-  color: #fff;
+  color: var(--orange);
+	transition: .6s;
+	text-shadow: 3px 2px 2px #fff;
+	z-index: 2;
 }
 
 /* HereSection qismi */
@@ -188,9 +191,9 @@ nav{
   padding: 0 30px;
 }
 .section_block_item{
-  height: 445px;
+  height: 428px;
   flex: 0 0 auto;
-  width: 28%;
+  width: 31%;
 }
 .section_block_item img{
   width: 100%;
@@ -207,11 +210,11 @@ nav{
 .section_block_item .title{
   margin-top: 26px;
   font-family: var(--ossembold);
-  font-size: 36px;
+  font-size: 32px;
   font-weight: normal;
 }
 .section_block_item .info{
-  margin: 20px auto;
+  margin: 18px auto;
   font-family: var(--mont);
   font-size: 20px;
 }
@@ -225,7 +228,7 @@ nav{
 }
 .section_block_item>a.btn_dark{
   top: 80px;
-  left:30px;
+  left:25px;
 }
 .section_block_item>a.btn_dark:hover{
   background-color: inherit;
@@ -243,7 +246,7 @@ nav{
 }
 
 .amazing_info{
-	width: calc(50% - 80px);
+	width: calc(52% - 100px);
 	margin: 0 30px;
   padding: 250px 0 312px 0;
 }
@@ -266,10 +269,27 @@ nav{
 	position: relative;
 	top: 80px;
 	left: 40px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.amazing_info .readmore:hover{
+  background-color: inherit;
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  transition: .3s;
+}
+.amazing_info .readmore:active{
+  background-color: var(--dark);
+	color: #fff;
+  transition: .5s;
 }
 .footer_block{
 	display: flex;
 }
 @media screen and (max-width: 947px) {
   /* HALI RESPONSIV EMAS */
+	.container{
+		width: 91.7%;
+	}
+
 }
