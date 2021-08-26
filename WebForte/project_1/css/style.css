@@ -45,6 +45,7 @@
   color: #fff;
   box-sizing: border-box;
   text-decoration: none;
+	list-style: none;
 }
 html{
   background-color: var(--bg);
@@ -286,16 +287,20 @@ nav{
   transition: .5s;
 }
 .footer_block{
-	padding: 300px 0 300px 0;
 	display: flex;
+	padding: 300px 0 300px 0;
 	justify-content: space-between;
 }
 .site_info,.footer_links{
 	flex: 0 0 auto;
-	width: 49%;
 }
-.social{
+.site_info{
+	width: 40%;
+}
+
+.fblock, .social, .footer_links{
 	display: flex;
+	justify-content: space-between;
 }
 .site_title{
 	margin-bottom: 20px;
@@ -307,6 +312,15 @@ nav{
 	font-family: var(--mont);
 	font-size: 25px;
 }
+.item_link{
+	margin-left: 40px;
+}
+.item_link>ul>li>a{
+
+
+}
+
+
 @media screen and (max-width: 947px) {
   /* HALI RESPONSIV EMAS */
 	.container{
