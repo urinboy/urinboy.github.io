@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta start -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta end -->
+
+    <!-- title start -->
+    <title>Xizmatlar - OsonSavdo</title>
+    <!-- title end -->
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Favicon end -->
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap end -->
+
+    <!-- FontAwesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!-- FontAwesome end -->
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- style end -->
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <!-- Logo Start -->
+        <a href="index.html" class="logo"><i class="fa fa-cubes" aria-hidden="true"></i> OsonSavdo</a>
+        <!-- Logo end -->
+
+        <!-- Nav Start -->
+        <ul class="navigation">
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Bosh sahifa</a></li>
+            <li><a href="about.html"><i class="fa fa-info" aria-hidden="true"></i> Loyiha haqida</a></li>
+            <li><a href="page.html"><i class="fa fa-laptop" aria-hidden="true"></i> Xizmatlar</a></li>
+            <li><a href="contact.html"><i class="fa fa-user" aria-hidden="true"></i> Bog'lanish</a></li>
+        </ul>
+        <!-- Nav end -->
+
+        <!-- Search Start -->
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="Qidiruv">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <!-- Search end -->
+    </header>
+    <!-- Header end -->
+
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+        <!-- Tabs Start -->
+        <div class="tabs">
+            <ul>
+                <li class="active">
+                    <span class="icon"><i class="fas fa-download"></i></span>
+                    <span class="text">Kirim</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-upload"></i></span>
+                    <span class="text">Chiqim</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-bank"></i></span>
+                    <span class="text">Pul olish</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-money"></i> </span>
+                    <span class="text">Pul berish</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-gift"></i></span>
+                    <span class="text">Tovarlar</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-sitemap"></i></span>
+                    <span class="text">Sinflar</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-box"></i></span>
+                    <span class="text">Omborlar</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-handshake"></i></span>
+                    <span class="text">Hamkorlar</span>
+                </li>
+                <li id="operatsiya">
+                    <span class="icon"><i class="fas fa-gears"></i></span>
+                    <span class="text">Operatsiyalar</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fas fa-gear"></i></span>
+                    <span class="text">Sozlamalar</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Tabs end -->
+
+        <!-- Content Start -->
+        <div class="content">
+
+            <!-- Kirim Start -->
+            <div class="tab_wrap" style="display: block;">
+                <div class="title"><i class="fa fa-download" aria-hidden="true"></i> Kirim</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+                    <!-- Row Start -->
+                    <div class="row mt-3">
+                        <!-- Left Column Start -->
+                        <div class="col-md-4 col-sm-4 content">
+                            <!-- Form Start -->
+                            <form action="">
+
+                                <div class="form-group row mb-2">
+                                    <div class="col-4">
+                                        <label for="date">Sana</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="date" name="date" id="date" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-4">
+                                        <input type="number" id="m_id" name="m_id" class="form-control form-control-sm" placeholder="Kodi">
+                                    </div>
+
+                                    <div class="col">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="mijoz" name="mijoz">
+                                            <option selected>Mijoz</option>
+                                            <option value="1">Sotuvchi 1</option>
+                                            <option value="2">Sotuvchi 2</option>
+                                            <option value="3">Sotuvchi 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <table class="table text-center content mt-3">
+                                        <thead class="table-theme">
+                                            <tr>
+                                                <th scope="col">Kodi</th>
+                                                <th scope="col">Qarzdor</th>
+                                                <th scope="col">Haqdor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td>1 </td>
+                                                <td>Sotuvchi </td>
+                                                <td>Sotuvchining ismi </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="form-group mt-2 row">
+                                    <label for="schotnum" class="col-sm-5 mt-2">Schet faktura №</label>
+                                    <input type="number" id="schotnum" class="col form-control form-control-sm">
+                                    <hr class="mt-3 mb-3">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="tkod">Kodi</label>
+                                        <input type="number" class="form-control form-control-sm" id="tkod" placeholder="">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="tovar">Tovar</label>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected></option>
+                                            <option value="1">Dollar</option>
+                                            <option value="2">So'm</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="mijoz">Mijoz</label>
+                                        <input type="text" class="form-control form-control-sm" id="mijoz" name="mijoz" placeholder="">
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-3">
+                                        <label for="t_id">Kodi</label>
+                                        <input type="number" class="form-control form-control-sm" id="t_id" name="t_id" placeholder="">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="tovar">Ombor</label>
+                                        <select class="form-select form-select-sm" id="tovar" aria-label=".form-select-sm example">
+                                            <option selected></option>
+                                            <option value="1">Kassa</option>
+                                            <option value="2">Ombor/option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="qoldiq">Qoldiq</label>
+                                        <input type="number" class="form-control form-control-sm" id="qoldiq" name="qoldiq" placeholder="">
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="soni" class="col-sm-3  form-label-sm">Soni</label>
+                                    <div class="col ">
+                                        <input type="number" class="form-control form-control-sm" id="soni">
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="narxi" class="col-sm-3  form-label-sm">Narxi</label>
+                                    <div class="col ">
+                                        <input type="number" class="form-control form-control-sm" id="narxi" name="narxi">
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="valyuta" class="col-sm-3  form-label-sm">Valyuta</label>
+                                    <div class="col ">
+                                        <select class="form-select form-select-sm" id="valyuta" name="valyuta" aria-label=".form-select-sm example">
+                                            <option selected></option>
+                                            <option value="1">Dollor</option>
+                                            <option value="2">So'm</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="izoh" class="col-sm-3  form-label-sm">Izoh</label>
+                                    <div class="col ">
+                                        <input type="text" class="form-control form-control-sm" id="izoh" name="izoh">
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-save float-end" type="submit" id="saqlash" name="saqlash"><i class="fa fa-floppy-o" aria-hidden="true"></i> Saqlash</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <!-- Form end -->
+                        </div>
+                        <!-- Left Column end -->
+
+                        <!-- Right Column Start -->
+                        <div class="col-md-8 col-sm-8">
+                            <table class="table">
+                                <thead class="table-theme">
+                                    <tr>
+                                        <th scope="col">№</th>
+                                        <th scope="col">Nomi</th>
+                                        <th scope="col">Miqdori</th>
+                                        <th scope="col">Narxi</th>
+                                        <th scope="col">Jami</th>
+                                        <th scope="col">Valyuta</th>
+                                        <th scope="col">Izoh</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Kompyuter</td>
+                                        <td>25</td>
+                                        <td>4 200 000</td>
+                                        <td>105 000 000</td>
+                                        <td>So'm</td>
+                                        <td>Acer Aspire</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Printer</td>
+                                        <td>20</td>
+                                        <td>1 200 000</td>
+                                        <td>24 000 000</td>
+                                        <td>So'm</td>
+                                        <td>HP Laster Jet 1018</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col">Jami :</div>
+                                <div class="col">
+                                    <button class="btn btn-theme float-end" type="submit"><i class="fa fa-print" aria-hidden="true"></i> Chop etish</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Column end -->
+                    </div>
+                    <!-- Row end -->
+                </div>
+                <!-- Tab Content end -->
+            </div>
+            <!-- Kirim end -->
+
+            <!-- Chiqim Start -->
+            <div class="tab_wrap" style="display: none;">
+
+                <div class="title"><i class="fa fa-upload" aria-hidden="true"></i> Chiqim</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+                    <!-- Row Start -->
+                    <div class="row mt-3">
+                        <!-- Left Column Start -->
+                        <div class="col-md-4 col-sm-4 content">
+                            <!-- Form Start -->
+                            <form action="">
+
+                                <div class="form-group row mb-2">
+                                    <div class="col-4">
+                                        <label for="date">Sana</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="date" name="date" id="date" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-4">
+                                        <input type="number" id="m_id" name="m_id" class="form-control form-control-sm" placeholder="Kodi">
+                                    </div>
+
+                                    <div class="col">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="mijoz" name="mijoz">
+                                            <option selected>Mijoz</option>
+                                            <option value="1">Sotuvchi 1</option>
+                                            <option value="2">Sotuvchi 2</option>
+                                            <option value="3">Sotuvchi 3</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <table class="table text-center content mt-3">
+                                        <thead class="table-theme">
+                                            <tr>
+                                                <th scope="col">Kodi</th>
+                                                <th scope="col">Qarzdor</th>
+                                                <th scope="col">Haqdor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td>1 </td>
+                                                <td>Sotuvchi </td>
+                                                <td>Sotuvchining ismi </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="form-group mt-2 row">
+                                    <label for="schotnum" class="col-sm-5 mt-2">Schet faktura №</label>
+                                    <input type="number" id="schotnum" class="col form-control form-control-sm">
+                                    <hr class="mt-3 mb-3">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="tkod">Kodi</label>
+                                        <input type="number" class="form-control form-control-sm" id="tkod" placeholder="">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="tovar">Tovar</label>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected></option>
+                                            <option value="1">Dollar</option>
+                                            <option value="2">So'm</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="mijoz">Mijoz</label>
+                                        <input type="text" class="form-control form-control-sm" id="mijoz" name="mijoz" placeholder="">
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-3">
+                                        <label for="t_id">Kodi</label>
+                                        <input type="number" class="form-control form-control-sm" id="t_id" name="t_id" placeholder="">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="tovar">Ombor</label>
+                                        <select class="form-select form-select-sm" id="tovar" aria-label=".form-select-sm example">
+                                            <option selected></option>
+                                            <option value="1">Kassa</option>
+                                            <option value="2">Ombor/option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <label for="qoldiq">Qoldiq</label>
+                                        <input type="number" class="form-control form-control-sm" id="qoldiq" name="qoldiq" placeholder="">
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="soni" class="col-sm-3  form-label-sm">Soni</label>
+                                    <div class="col ">
+                                        <input type="number" class="form-control form-control-sm" id="soni">
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            <label class="form-check-label" for="autoSizingCheck">
+                                                <input class="form-check-input" type="checkbox" id="autoSizingCheck"> Ko'chirib o'tish
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="narxi" class="col-sm-3  form-label-sm">Narxi</label>
+                                    <div class="col ">
+                                        <input type="number" class="form-control form-control-sm" id="narxi" name="narxi">
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="valyuta" class="col-sm-3  form-label-sm">Valyuta</label>
+                                    <div class="col ">
+                                        <select class="form-select form-select-sm" id="valyuta" name="valyuta" aria-label=".form-select-sm example">
+                                            <option selected></option>
+                                            <option value="1">Dollor</option>
+                                            <option value="2">So'm</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3  mb-2 row">
+
+                                    <label for="izoh" class="col-sm-3  form-label-sm">Izoh</label>
+                                    <div class="col ">
+                                        <input type="text" class="form-control form-control-sm" id="izoh" name="izoh">
+                                    </div>
+
+                                </div>
+                                <div class="row checkbox-card" style="display: none;">
+                                    <div class="col-3">
+                                        <label for="tkod">Kodi</label>
+                                        <input type="text" class="form-control form-control-sm" placeholder="">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="tovar">Ombor</label>
+                                        <input type="text" class="form-control form-control-sm" placeholder="">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="date">Qoldiq</label>
+                                        <input type="text" class="form-control form-control-sm" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <button class="btn btn-save float-end" type="submit" id="saqlash" name="saqlash"><i class="fa fa-floppy-o" aria-hidden="true"></i> Saqlash</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                            <!-- Form end -->
+                        </div>
+                        <!-- Left Column end -->
+
+                        <!-- Right Column Start -->
+                        <div class="col-md-8 col-sm-8">
+                            <table class="table">
+                                <thead class="table-theme">
+                                    <tr>
+                                        <th scope="col">№</th>
+                                        <th scope="col">Nomi</th>
+                                        <th scope="col">Miqdori</th>
+                                        <th scope="col">Narxi</th>
+                                        <th scope="col">Jami</th>
+                                        <th scope="col">Valyuta</th>
+                                        <th scope="col">Izoh</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Kompyuter</td>
+                                        <td>25</td>
+                                        <td>4 200 000</td>
+                                        <td>105 000 000</td>
+                                        <td>So'm</td>
+                                        <td>Acer Aspire</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Printer</td>
+                                        <td>20</td>
+                                        <td>1 200 000</td>
+                                        <td>24 000 000</td>
+                                        <td>So'm</td>
+                                        <td>HP Laster Jet 1018</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col">Jami :</div>
+                                <div class="col">
+                                    <button class="btn btn-theme float-end" type="submit"><i class="fa fa-print" aria-hidden="true"></i> Chop etish</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Column end -->
+                    </div>
+                    <!-- Row end -->
+                </div>
+                <!-- Tab Content end -->
+            </div>
+            <!-- Chiqim end -->
+
+            <!-- Pul olish Start -->
+            <div class="tab_wrap" style="display: none;">
+                <div class="title"><i class="fa fa-bank" aria-hidden="true"></i> Pul olish</div>
+                <div class="tab_content">
+
+                    <div class="col-md-4 col-sm-4 content">
+                        <!-- Form Start -->
+                        <form action="#">
+                            <!-- Date start -->
+                            <div class="form-group row mb-2">
+                                <div class="col-4"><label for="date">Sana</label></div>
+                                <div class="col-8">
+                                    <input type="date" name="date" id="date" class="form-control form-control-sm">
+                                </div>
+                            </div>
+                            <!-- Date end -->
+
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <input type="number" id="m_id" class="form-control form-control-sm" placeholder="Kodi">
+                                </div>
+                                <div class="col">
+                                    <select id="mijoz" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Mijoz</option>
+                                <option value="1">Sotuvchi 1</option>
+                                <option value="2">Sotuvchi 2</option>
+                                <option value="3">Sotuvchi 3</option>
+                            </select>
+                                </div>
+                                <div class="form-group">
+                                    <table class="table text-center content mt-3">
+                                        <thead class="table-theme">
+                                            <tr>
+                                                <th scope="col">Kodi</th>
+                                                <th scope="col">Qarzdor</th>
+                                                <th scope="col">Haqdor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td>1 </td>
+                                                <td>Sotuvchi </td>
+                                                <td>Sotuvchining ismi </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="mt-3  mb-2 row">
+                                    <label for="summa" class="col-sm-3  form-label-sm">Summa</label>
+                                    <div class="col ">
+                                        <input type="number" class="form-control form-control-sm" id="summa" name="summa">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3  mb-2 row">
+                                <label for="valyuta" class="col-sm-3  form-label-sm">Valyuta</label>
+                                <div class="col ">
+                                    <select id="valyuta" name="valyuta" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected></option>
+                                <option value="1">Dollor</option>
+                                <option value="2">So'm</option>
+                            </select>
+                                </div>
+                            </div>
+                            <!-- Comment Start -->
+                            <div class="mt-3  mb-2 row">
+                                <label for="izoh" class="col-sm-3  form-label-sm">Izoh</label>
+                                <div class="col ">
+                                    <input type="text" class="form-control form-control-sm" id="izoh">
+                                </div>
+                            </div>
+                            <!-- Comment end -->
+
+                            <!-- Bo'limni almashtirish -->
+                            <div class="row mb-3">
+                                <div class="col-3">
+                                    <label for="k_id">Kodi</label>
+                                    <input type="number" id="k_id" class="form-control form-control-sm" placeholder="">
+                                </div>
+                                <div class="col-6">
+                                    <label for="k_name">Kassa nomi</label>
+                                    <input type="text" id="k_name" class="form-control form-control-sm" placeholder="">
+                                </div>
+                                <div class="col-3">
+                                    <label for="qoldiq">Qoldiq</label>
+                                    <input type="number" id="qodiq" name="qoldiq" class="form-control form-control-sm" placeholder="">
+                                </div>
+                            </div>
+                            <!-- Bo'limni almashtirish -->
+
+                            <!-- Submit Button start -->
+                            <div class="row text-center">
+                                <div class="col">
+                                    <button class="btn btn-save float-end" type="submit" id="saqlash" name="saqlash"><i class="fa fa-floppy-o" aria-hidden="true"></i> Saqlash</button>
+                                </div>
+                            </div>
+                            <!-- Submit buttom end -->
+
+                        </form>
+                        <!-- Form end -->
+                    </div>
+                    <!-- Pul olish end -->
+
+
+                </div>
+                <!-- Tab Content End -->
+
+            </div>
+            <!-- Wrapper End -->
+
+            <!-- Pul berish Start -->
+            <div class="tab_wrap" style="display: none;">
+                <div class="title"><i class="fa fa-money" aria-hidden="true"></i> Pul berish</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+
+                    <div class="col-md-4 col-sm-4 content">
+                        <!-- Form Start -->
+                        <form action="#">
+                            <!-- Date start -->
+                            <div class="form-group row mb-2">
+                                <div class="col-4"><label for="date">Sana</label></div>
+                                <div class="col-8">
+                                    <input type="date" name="date" id="date" class="form-control form-control-sm">
+                                </div>
+                            </div>
+                            <!-- Date end -->
+
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <input type="number" id="m_id" class="form-control form-control-sm" placeholder="Kodi">
+                                </div>
+                                <div class="col">
+                                    <select id="mijoz" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Mijoz</option>
+                                <option value="1">Sotuvchi 1</option>
+                                <option value="2">Sotuvchi 2</option>
+                                <option value="3">Sotuvchi 3</option>
+                            </select>
+                                </div>
+                                <div class="form-group">
+                                    <table class="table text-center content mt-3">
+                                        <thead class="table-theme">
+                                            <tr>
+                                                <th scope="col">Kodi</th>
+                                                <th scope="col">Qarzdor</th>
+                                                <th scope="col">Haqdor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td>1 </td>
+                                                <td>Sotuvchi </td>
+                                                <td>Sotuvchining ismi </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="mt-3  mb-2 row">
+                                    <label for="summa" class="col-sm-3  form-label-sm">Summa</label>
+                                    <div class="col ">
+                                        <input type="number" class="form-control form-control-sm" id="summa" name="summa">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3  mb-2 row">
+                                <label for="valyuta" class="col-sm-3  form-label-sm">Valyuta</label>
+                                <div class="col ">
+                                    <select id="valyuta" name="valyuta" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected></option>
+                                <option value="1">Dollor</option>
+                                <option value="2">So'm</option>
+                            </select>
+                                </div>
+                            </div>
+                            <!-- Comment Start -->
+                            <div class="mt-3  mb-2 row">
+                                <label for="izoh" class="col-sm-3  form-label-sm">Izoh</label>
+                                <div class="col ">
+                                    <input type="text" class="form-control form-control-sm" id="izoh">
+                                </div>
+                            </div>
+                            <!-- Comment end -->
+
+                            <!-- Bo'limni almashtirish -->
+                            <div class="row mb-3">
+                                <div class="col-3">
+                                    <label for="k_id">Kodi</label>
+                                    <input type="number" id="k_id" class="form-control form-control-sm" placeholder="">
+                                </div>
+                                <div class="col-6">
+                                    <label for="k_name">Kassa nomi</label>
+                                    <input type="text" id="k_name" class="form-control form-control-sm" placeholder="">
+                                </div>
+                                <div class="col-3">
+                                    <label for="qoldiq">Qoldiq</label>
+                                    <input type="number" id="qodiq" name="qoldiq" class="form-control form-control-sm" placeholder="">
+                                </div>
+                            </div>
+                            <!-- Bo'limni almashtirish -->
+
+                            <!-- Submit Button start -->
+                            <div class="row text-center">
+                                <div class="col">
+                                    <button class="btn btn-save float-end" type="submit" id="saqlash" name="saqlash"><i class="fa fa-floppy-o" aria-hidden="true"></i> Saqlash</button>
+                                </div>
+                            </div>
+                            <!-- Submit buttom end -->
+
+                        </form>
+                        <!-- Form end -->
+                    </div>
+                    <!--  Content End -->
+
+
+                </div>
+                <!-- Tab Content End -->
+
+            </div>
+            <!-- Pul olish End -->
+
+            <!-- Tovarlar Start -->
+            <div class="tab_wrap" style="display: none;">
+                <div class="title mb-3"><i class="fa fa-gift" aria-hidden="true"></i> Tovarlar</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+                    <form action="#" class="row p-0">
+
+
+                        <div class="col-sm-1 m-0 text-center">
+                            <label for="ombor"> Ombor </label>
+                        </div>
+                        <div class="col-1 m-0">
+                            <input type="number" id="ombor" name="ombor" class="form-control form-control-sm" placeholder="0">
+                        </div>
+
+                        <div class="col-2">
+                            <select id="ombor" name="ombor" class="form-select form-select-sm" aria-label="Default select example">
+                                        <option value="1">Kassa</option>
+                                        <option value="2">Ombor</option>
+                                        <option value="3" selected>Barchasi</option>
+                                    </select>
+                        </div>
+                        <div class="col-2 m-0">
+
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="check-mavjud" name="check-mavjud" type="checkbox">
+                                        <label class="form-check-label" for="check-mavjud">
+                                                    Mavjud tovarlar
+                                                </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="check-minimal" name="check-minimal" type="checkbox">
+                                        <label class="form-check-label" for="check-minimal">
+                                                    Minimal oz tovarlar
+                                                </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="form-check">
+                                <label class="form-check-label" for="autoSizingCheck">
+                                    <input class="form-check-input" type="checkbox" id="autoSizingCheck"> Muddatga ko'ra
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6" style="display: none;">
+
+                            <div class="row mb-2">
+                                <div class="col-5">
+                                    <input type="date" class="form-control form-control-sm" name="min-date" id="min-date">
+                                </div>
+                                <div class="col-5">
+                                    <input type="date" class="form-control form-control-sm" name="min-date" id="min-date">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-10">
+                                    <table class="table">
+                                        <thead class="table-theme">
+                                            <th>Valyuta</th>
+                                            <th>Kirim</th>
+                                            <th>Chiqim</th>
+                                            <th>Balans</th>
+                                        </thead>
+                                        <tbody>
+                                            <td>so'm</td>
+                                            <td>12345</td>
+                                            <td>0</td>
+                                            <td>12345</td>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+
+                            <div class="col-sm-6">
+                                <button class="btn btn-theme"><i class="fa fa-list-alt" aria-hidden="true"></i> Batafsil</button>
+                                <button class="btn btn-theme"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Eksport Exsel</button>
+                                <button class="btn btn-theme"><i class="fa fa-plus-square" aria-hidden="true"></i> Yangi tovar</button>
+                                <button class="btn btn-theme"><i class="fa fa-download" aria-hidden="true"></i> Import Exsel</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                    <!-- Table Start -->
+                    <table class="table br-1">
+                        <thead class="table-theme">
+                            <tr>
+                                <th scope="col">Kodi</th>
+                                <th scope="col">Nomi</th>
+                                <th scope="col">Birlik</th>
+                                <th scope="col">Sotuv narxi</th>
+                                <th scope="col">Qoldiq</th>
+                                <th scope="col">Jami</th>
+                                <th scope="col">Minimal qoldiq</th>
+                                <th scope="col">Tipi</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>So'm</td>
+                                <td>so'm</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td> </td>
+                                <td>0</td>
+                                <td>Valyuta</td>
+                                <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Dollor</td>
+                                <td>$</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td> </td>
+                                <td>0</td>
+                                <td>Valyuta</td>
+                                <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Table End -->
+                </div>
+                <!-- Tab Content End -->
+            </div>
+            <!-- Tovarlar End -->
+
+            <!-- Sinflar Start -->
+            <div class="tab_wrap" style="display: none;">
+                <div class="title"><i class="fa fa-sitemap" aria-hidden="true"></i> Sinflar</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+                    <!-- Row 1 Start -->
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-theme"><i class="fa fa-shekel"></i> Eksport Exsel</button>
+                            <button class="btn btn-theme"><i class="fa fa-plus"></i> Yangi sinf</button>
+                            <button class="btn btn-theme"><i class="fa fa-trash-alt"></i> O'chirish</button>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <!-- Row 1 End -->
+
+                    <!-- Row 2 Start -->
+                    <div class="row mt-2">
+                        <div class="col-4">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action active">Tovar</a>
+                                <a href="#" class="list-group-item list-group-item-action">Valyuta</a>
+                                <a href="#" class="list-group-item list-group-item-action">Xizmat</a>
+                                <a href="#" class="list-group-item list-group-item-action">Maxsulot</a>
+                                <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <table class="table">
+                                <thead class="table-theme">
+                                    <tr>
+                                        <th scope="col">Kodi</th>
+                                        <th scope="col">Nomi</th>
+                                        <th scope="col">Qoldiq</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sotuvchi</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Right Side End -->
+
+                    </div>
+                    <!-- Row 2 End -->
+                </div>
+                <!-- Tab Content End -->
+            </div>
+            <!-- Sinf End -->
+
+
+            <!-- Omborlar bo'limi start -->
+            <div class="tab_wrap" style="display: none;">
+
+                <div class="title"><i class="fa fa-box" aria-hidden="true"></i> Omborlar</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+                    <!-- Row Start -->
+                    <div class="col mb-3">
+                        <form action="#" class="row">
+
+                            <div class="col-1">
+                                <label for="tsoni">Tovar </label>
+                            </div>
+                            <div class="col-1">
+                                <input type="number" class="form-control form-control-sm" id="tsoni" name="tsoni" placeholder="0">
+                            </div>
+                            <div class="col-2">
+                                <select name="valyuta" class="form-control form-control-sm" id="valyuta"> 
+                                        <option value="1">Dollor</option>
+                                        <option value="2">So'm</option>
+                                    </select>
+                            </div>
+                            <div class="col-3">
+                                <input type="checkbox" class="form-check-input" id="checkbox">
+                                <label for="checkbox" class="form-check-label">Tovar mavjud bo'lgan omborlar</label>
+                            </div>
+
+                            <div class="col-5">
+                                <button class="btn btn-theme"><i class="fa fa-list-alt" aria-hidden="true"></i> Batafsil</button>
+                                <button class="btn btn-theme"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Eksport Exsel</button>
+                                <button class="btn btn-theme"><i class="fa fa-plus-square" aria-hidden="true"></i> Yangi ombor</button>
+
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Row End -->
+
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th scope="col">Kodi</th>
+                                <th scope="col">Nomi</th>
+                                <th scope="col">Qo'shimcha ma'lumoti</th>
+                                <th scope="col">Qoldiq</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ombor</td>
+                                <td>Do'kon</td>
+                                <td>0</td>
+                                <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Kassa</td>
+                                <td>Do'kon</td>
+                                <td>0</td>
+                                <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tab Content end -->
+            </div>
+            <!-- Omborlar bo'limi end -->
+
+            <!-- Hamkorlar bo'limi start -->
+            <div class="tab_wrap" style="display: none;">
+                <div class="title"><i class="fa fa-handshake-o" aria-hidden="true"></i> Hamkorlar</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+                    <!-- Row Start -->
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <button class="btn btn-theme"><i class="fa fa-list-alt" aria-hidden="true"></i> Batafsil</button>
+                            <button class="btn btn-theme"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Eksport Exsel</button>
+                            <button class="btn btn-theme"><i class="fa fa-plus-square" aria-hidden="true"></i> Yangi hamkor</button>
+
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <!-- Row end -->
+
+                    <!-- Table start -->
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th scope="col">Kodi</th>
+                                <th scope="col">Nomi</th>
+                                <th scope="col">Qo'shimcha ma'lumoti</th>
+                                <th scope="col">Qarzdor</th>
+                                <th scope="col">Xaridor</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sotuvchi</td>
+                                <td>Sotuvchining ismi</td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Table end -->
+                </div>
+                <!-- Tab Content end -->
+            </div>
+            <!-- Hamkorlar bo'limi end -->
+
+
+            <!-- Operatsiyalar bo'limi start -->
+            <div class="tab_wrap" style="display: none;">
+                <div class="title"><i class="fas fa-gears"></i> Operatsiyalar</div>
+                <!-- Tab Content Start -->
+                <div class="tab_content">
+                    <!-- Row 1 Start -->
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <button class="btn btn-theme"><i class="fa fa-list-alt"></i> Barchasi</button>
+                            <button class="btn btn-theme"><i class="fa fa-file-excel"></i> Exsel</button>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <!-- Row 1 end -->
+
+                    <!-- Row 2 Start -->
+                    <div class="row">
+                        <!-- Table Start -->
+                        <table class="table">
+                            <thead class="table-theme">
+                                <tr>
+                                    <th scope="col">№</th>
+                                    <th scope="col">Operatsiya</th>
+                                    <th scope="col">№ SF</th>
+                                    <th scope="col">Sana</th>
+                                    <th scope="col">Mijoz</th>
+                                    <th scope="col">Tovar</th>
+                                    <th scope="col">Ombor</th>
+                                    <th scope="col">Soni</th>
+                                    <th scope="col">Narxi</th>
+                                    <th scope="col">Jami</th>
+                                    <th scope="col">Valyuta</th>
+                                    <th scope="col">Izoh</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>KIRIM</td>
+                                    <td>1</td>
+                                    <td>19/06/2021</td>
+                                    <td>Sotuvchi</td>
+                                    <td>so'm</td>
+                                    <td>Kassa</td>
+                                    <td>12345</td>
+                                    <td>1</td>
+                                    <td>12345</td>
+                                    <td>so'm</td>
+                                    <td>Maosh uchun</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- Table end -->
+                    </div>
+                    <!-- Row 2 end -->
+                </div>
+                <!-- Tab Content end -->
+            </div>
+            <!-- Operatsiyalar bo'limi end -->
+
+            <!-- Sozlash bo'limi -->
+            <div class="tab_wrap" style="display: none;">
+                <div class="title"><i class="fas fa-gear"></i> Sozlash </div>
+                <!-- Tab Content -->
+                <div class="tab_content">
+                    <!-- Ichki bo'linish  -->
+                    <div class="row">
+                        <!-- Birinchi ustun -->
+                        <div class="col-md-4 col-sm-4 content">
+
+                            <!-- Tilni tanlash -->
+                            <form>
+                                <div class="form-group row mb-2">
+                                    <div class="col-4"><label for="date"><i class="fas fa-language"></i> Til</label></div>
+                                    <div class="col-8">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>O'zbek</option>
+                                <option value="1">Ўзбек</option>
+                                <option value="2">Русский</option>
+                                <option value="3">English</option>
+                            </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- Tilni tanlash tugashi -->
+
+                            <!-- Parolni amashtirish -->
+                            <form>
+                                <div class="row">
+                                    <fieldset>
+                                        <legend>Parolni o'zgartirish:</legend>
+                                        <div class="row">
+                                            <label for="" class="col-sm-6  form-label-sm">Eski parol:</label>
+                                            <div class="col mb-2">
+                                                <input type="password" class="form-control form-control-sm" id="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label for="" class="col-sm-6  form-label-sm">Yangi parol:</label>
+                                            <div class="col mb-2">
+                                                <input type="password" class="form-control form-control-sm" id="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label for="" class="col-sm-6  form-label-sm">Parolni takrorlang:</label>
+                                            <div class="col mb-2">
+                                                <input type="password" class="form-control form-control-sm" id="">
+                                            </div>
+                                        </div>
+                                        <input class="btn btn-theme float-end" type="submit" value="  Ok  ">
+                                    </fieldset>
+                                </div>
+                            </form>
+                            <!-- Parolni almashtirish tugashi -->
+
+                            <!-- Choose theme -->
+
+                            <form>
+                                <div class="form-group row mb-2 mt-2">
+                                    <fieldset>
+                                        <legend>Tashqi ko'rinishini o'zgartirish</legend>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option selected>Tema 1</option>
+                                        <option value="1">Tema 2</option>
+                                        <option value="2">Teme 3</option>
+                                        <option value="3">Tema 4</option>
+                                    </select>
+                                    </fieldset>
+                                </div>
+                            </form>
+                            <!-- Choose theme end -->
+
+                            <!-- About web -->
+
+                            <div class="form-group row mb-2 mt-3">
+                                <fieldset>
+                                    <legend>Dastur haqida</legend>
+                                    <p><b>Versiya:</b> web v1.0</p>
+                                    <p><b>Ishlab chiqarvchi:</b> NISD</p>
+                                    <p>Aloqa uchun</p>
+                                    <p><b>Tel:</b> +998 (99) 322-12-034, +998 (90) 596-77-57 </p>
+                                    <p><b>E-mail:</b> admin@nisd.uz</p>
+                                    <p><b>Ish vaqti:</b> 09:00 dan 18:00 gacha</p>
+                                    <p><b>Web sayt:</b> www.nisd.uz</p>
+                                    <p><b>Telegram kanal:</b> t.me/osonsavdo_kanal</p>
+                                </fieldset>
+                            </div>
+                            <!-- About web end -->
+
+
+                            <!-- Activation -->
+                            <form>
+                                <fieldset>
+                                    <legend>Dasturni ishga tushirish:</legend>
+                                    <div class="row">
+                                        <label for="" class="col-sm-6  form-label-sm">Kod 1:</label>
+                                        <div class="col mb-2">
+                                            <input type="password" class="form-control form-control-sm" id="">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label for="" class="col-sm-6  form-label-sm">Kod 2:</label>
+                                        <div class="col mb-2">
+                                            <input type="password" class="form-control form-control-sm" id="">
+                                        </div>
+                                    </div>
+                                    <input class="btn btn-theme float-end" type="submit" value="  Ok  ">
+                                </fieldset>
+                            </form>
+                            <!-- Activation end -->
+
+                        </div>
+                        <!-- Birinchi ustun tugashi -->
+
+                        <!-- Ikkinchi ustun -->
+                        <div class="col-md-8 col-sm-8">
+
+                            <!-- Ichki row -->
+                            <div class="row">
+                                <!-- Tugmalar qismi -->
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action mb-1 active">Ulashish</a>
+                                        <a href="#" class="list-group-item list-group-item-action mb-1 disabled">Zaxiraga olish</a>
+                                        <a href="#" class="list-group-item list-group-item-action mb-1 disabled">Yuklash</a>
+                                        <a href="#" class="list-group-item list-group-item-action disabled">Uzilish</a>
+                                    </div>
+                                </div>
+                                <!-- Tugmalar qismi end -->
+
+                                <!-- Textare -->
+                                <div class="col">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <!-- Textarea end -->
+                            </div>
+                            <!-- Ichki row end -->
+                        </div>
+                    </div>
+                    <!-- Ikkinchi ustun tugashi -->
+                </div>
+                <!-- Ichki bo'linish tugashi -->
+            </div>
+            <!-- Tab Content tugashi -->
+        </div>
+        <!-- Sozlash bo'limi tugashi -->
+
+
+    </div>
+    <!-- Content End -->
+
+
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- Scripts Start -->
+    <script src="../js/scripts.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="../js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Script  end -->
+
+
+
+</body>
+
+</html>
