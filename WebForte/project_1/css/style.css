@@ -315,7 +315,7 @@ nav{
 .social{
 	display: flex;
 }
-.social a>img{
+.social>ul>li>a>img{
 	margin-right: 15px;
 }
 .item_link{
