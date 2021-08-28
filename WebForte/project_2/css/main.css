@@ -118,6 +118,7 @@
         color: #4f4e4e;
         text-decoration: none;
         text-transform: uppercase;
+        transition: 1.5s all ease-in;
     }
     
     .articles .article_item .article_text .article_anons p {
@@ -168,6 +169,11 @@
         font-weight: bold;
         color: #339933;
         padding-left: 20px;
+    }
+    
+    .wedget_body ul li a:hover {
+        color: lawngreen;
+        text-decoration: none;
     }
     
     .wedget_body form .input {
@@ -223,8 +229,10 @@
         transition: .3s all ease;
     }
     
-    .paging a:hover {
+    .paging a:hover,
+    .articles .article_item .article_text h3 a:hover {
         color: #58c93a;
+        transition: .4s all ease-in;
     }
     
     footer {
