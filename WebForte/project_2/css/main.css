@@ -88,6 +88,7 @@
     main .main_block,
     .paging {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     
@@ -147,7 +148,7 @@
     }
     /* Main Right content */
     
-    .wedget_header {
+    .widget_header {
         /* width: 100%; */
         padding: 17px 21px;
         font-weight: bold;
@@ -157,26 +158,26 @@
         text-transform: uppercase;
     }
     
-    .wedget_body {
+    .widget_body {
         padding: 19px 0 62px 0;
     }
     
-    .wedget_body ul {
+    .widget_body ul {
         list-style: none;
     }
     
-    .wedget_body ul li a {
+    .widget_body ul li a {
         font-weight: bold;
         color: #339933;
         padding-left: 20px;
     }
     
-    .wedget_body ul li a:hover {
+    .widget_body ul li a:hover {
         color: lawngreen;
         text-decoration: none;
     }
     
-    .wedget_body form .input {
+    .widget_body form .input {
         width: 241px;
         padding: 19px;
         border: 1px solid #e1e0e0;
@@ -184,7 +185,7 @@
         outline: none;
     }
     
-    .wedget_body form .btn {
+    .widget_body form .btn {
         position: relative;
         display: flex;
         justify-content: center;
@@ -202,7 +203,7 @@
         transition: .5s all ease-in;
     }
     
-    .wedget_body form .btn:hover {
+    .widget_body form .btn:hover {
         width: 23px;
         height: 23px;
         right: -232px;
@@ -216,6 +217,7 @@
     }
     
     .paging {
+        position: relative;
         padding: 30px;
         border-top: 1px solid #e1e0e0;
     }
@@ -227,6 +229,11 @@
         text-transform: uppercase;
         text-decoration: none;
         transition: .3s all ease;
+    }
+    
+    .paging a img {
+        position: relative;
+        top: -3px;
     }
     
     .paging a:hover,
