@@ -8,5 +8,115 @@
 
 body{
     background-color: #efefef;
-    font-family: 'Roboto';
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.wrapper{
+    max-width: 1110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+.nav> li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: #333;
+}
+.header{
+    background-color: #fff;
+    /* margin-top: 10px; */
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 12px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #66c05d;
+    font-size: 36px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+.logo-img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/logo.svg');
+    margin-right: 20px;
+}
+.header_info span{
+    font-size: 16px;
+}
+.header_info button{
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 2px solid #66c05d;
+    margin-left: 36px;
+    cursor: pointer;
+}
+
+.header_info button:hover{
+ background-color: #66c05d;
+ color:#fff;
+}
+.header_botton{
+    padding: 20px 0 27px 0;
+}
+.header_botton .nav {
+    font-size: 16px;
+    margin: 0;
+}
+
+.header_botton .nav > ul > li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: #efefef;
+}
+.banner{
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 169px;
+    padding-bottom: 204px;
+    color: #fff;
+}
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 39px;
+}
+.banner p{
+    margin-bottom: 57px;
+    max-width: 315px;
+    line-height: 1.5em;
+}
+.btn{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 9px 40px;
 }
