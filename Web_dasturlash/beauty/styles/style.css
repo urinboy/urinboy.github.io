@@ -32,10 +32,13 @@ body{
 .nav > li > a{
     text-decoration: none;
     color: #333;
+    transition: 0.2s ease;
+}
+.nav > li > a:hover{
+    color: #66c05d;
 }
 .header{
     background-color: #fff;
-    /* margin-top: 10px; */
 }
 .header_top{
     display: flex;
@@ -187,9 +190,6 @@ hr{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 19px 30px;
 }
-/* .grid-item{
-    margin-bottom: 20px;
-} */
 .grid-item-title{
     grid-column: 1/4;
     grid-row: 1/2;
