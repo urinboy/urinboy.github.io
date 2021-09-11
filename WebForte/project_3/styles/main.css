@@ -1,3 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    transition: .3s all ease;;
+}
+
 body{
-    background-color: red;
+    font-family: 'Proxima Nona Rg';
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* Header Top qismi */
+header .header_top{
+    background-color: #30322e;
+    padding: 15px 0;
+}
+header .header_top .container,
+header .header_middle .header_block{
+    display: flex;
+    justify-content: space-between;
+}
+header .header_top ul{
+    display: flex;
+    list-style:none;
+}
+header .header_top ul li,
+header .header_top ul li a{
+    font-size: 14px;
+    color:#fff;
+}
+header .header_top ul li a:hover{
+    color:#fcd106;
+}
+header .header_top .header_top_left ul li{
+    margin-right: 35px;
+}
+header .header_top .header_top_right ul li{
+    margin-right: 3px;
+}
+/* Header Middle qismi */
+header .header_middle{
+    background-color: #fcd106;
+    padding: 30px 0;
+}
+/* Header_block yuchun tepada display:flex */
+
+header .header_middle .header_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_middle .header_block .header_brand,
+header .header_middle .header_block .header_contact{
+    flex: 0 0 auto;
+    width: 25%;
+}
+header .header_middle .header_block .header_search{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+header .header_middle .header_block .header_search form{
+    display: flex;
+}
+
+header .header_middle .header_block .header_search form input{
+    font-size: 14px;
+    padding: 12px 17px;
+    flex: 0 0 auto;
+    width: calc(76% - 35px);
+    outline: none;
+    border: 1px solid #e1bc0b;
+    border-right: 0;
+}
+header .header_middle .header_block .header_search form input::placeholder{
+    color: #000;
+}
+header .header_middle .header_block .header_search form button{
+    flex: 0 0 auto;
+    width: 24%;
+    background-color: #ce0000;
+    color: #fff;
+    border: none;
+    padding-left: 27px;
+    cursor: pointer;
+    position: relative;
+    background-image: url('../images/search.png');
+    background-position: 30px center;
+    background-repeat: no-repeat;
+}
+
+/* Birinchi usul */
+/* 
+header .header_middle .header_block .header_search form button::before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/search.png');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 30px;
+} */
+
+header .header_middle .header_contact{
+    text-align: right;
+}
+header .header_middle .header_contact .header_worktime{
+    color: #343331;
+    margin-bottom: 5px;
+}
+header .header_middle .header_contact .header_phone a{
+    color: #343331;
+    font-size: 28px;
+    font-family: 'Proxima Nona Lt';
+    font-weight: 600;
+}
+header .header_middle .header_contact .header_phone a span{
+    color: #ce0000;
+}
+header .header_middle .header_contact .header_phone a:hover{
+    color: #ce0000;
+}
+header .header_middle .header_contact .header_phone a:hover span{
+    color: #343331;
+}
+header .header_middle .header_contact .header_call_back a{
+    color: #ce0000;
+    border-bottom: 1px solid #f1ad04;
+}
+/* Header Bottom uchun */
+
+header .header_bottom{
+    background-color: #f6f5f3;
+    padding: 15px 0;
+}
+header .header_bottom ul{
+    list-style: none;
+    display: flex;
+}
+header .header_bottom li{
+    margin-right: 35px;
+}
+header .header_bottom li a{
+    display: flex;
+    color: #1c1b1a;
+}
+header .header_bottom li a::before{
+    content: '>';
+    margin-right: 7px;
+    color: #e52e2e;
+    font-family: 'Proxima Nova Bl';
+    font-weight: 900;
+    opacity: 0;
+    transition: .3s all ease;
+    transform: translateX(-15px);
+}
+header .header_bottom li a.active::before,
+header .header_bottom li a:hover:before{
+    opacity: 1;
+    transform: translateX(0);
 }

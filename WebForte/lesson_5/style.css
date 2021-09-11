@@ -11,7 +11,7 @@ h1, h3{
 	color: #ffffff;
 	text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-h2{
+h2{	
 	padding: 5px;
 	font-size: 24px;
 	color: #ab0707;
@@ -20,6 +20,7 @@ h2{
 	border-radius: 8px;
 }
 h4{
+
 	font-size: 19px;
 	color: #118408;
 	text-transform: capitalize;
