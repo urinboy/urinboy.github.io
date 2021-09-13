@@ -153,7 +153,7 @@ header .header_bottom li a{
     display: flex;
     color: #1c1b1a;
 }
-header .header_bottom li:not(.cart) a::before{
+header .header_bottom li a::before{
     content: '>';
     margin-right: 7px;
     color: #e52e2e;
@@ -169,30 +169,23 @@ header .header_bottom li a:hover:before{
     transform: translateX(0);
 }
 
-header .header_bottom li.cart{
-}
-
-
-
-/* 
 header .header_bottom nav{
     display: flex;
     justify-content: space-between;
 }
 
 
-header .header_bottom nav li {
+header .header_bottom nav .korzina_link {
     position: relative;
 }
-header .header_bottom nav li a img{
+header .header_bottom nav .korzina_link a img{
     position: absolute;
-    transform: translateX(0);
     left: -27px;
 }
-header .header_bottom nav li a{
+header .header_bottom nav .korzina_link a{
     color: #1c1b1a;
 }
 
-header .header_bottom nav li a:hover{
+header .header_bottom nav .korzina_link a:hover{
     color: #e52e2e;
-} */
+}
