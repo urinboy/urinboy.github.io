@@ -15,7 +15,11 @@ body{
     width: 1170px;
     margin: 0 auto;
 }
+
 /* Header Top qismi */
+header{
+    margin-bottom: 40px;
+}
 header .header_top{
     background-color: #30322e;
     padding: 15px 0;
@@ -147,32 +151,75 @@ header .header_bottom ul{
     display: flex;
 }
 header .header_bottom li{
-    margin-right: 25px;
+    margin-right: 35px;
 }
 header .header_bottom li a{
     display: flex;
     color: #1c1b1a;
+    position: relative;
 }
 header .header_bottom li:not(.cart) a::before{
     content: '>';
     margin-right: 7px;
     color: #e52e2e;
     font-family: 'Proxima Nova Bl';
-    font-weight: 900;
+    font-weight: bold;
     opacity: 0;
     transition: .3s all ease;
-    transform: translateX(-15px);
+    position: absolute;
+    left: -30px;
 }
 header .header_bottom li a.active::before,
 header .header_bottom li a:hover:before{
     opacity: 1;
     transform: translateX(0);
+    left: -15px;
 }
 
 header .header_bottom li.cart{
+    margin-right: 0;
+    margin-left: auto;
 }
 
+header .header_bottom li.cart a{
+    background-image: url('../images/korzina.png');
+    background-repeat: no-repeat;
+    background-position: left  0;
+    padding-left: 30px;
+    padding-right: 50px;
+    transition: .3s all ease;
+}
 
+header .header_bottom li.cart a:hover{
+    background-position:  0 bottom;
+    color: #e52e2e;
+}
+/* Main content */
+/* main .sidebar, main .main_right{
+    height: 500px;
+    outline: 1px solid red;
+    background-color: #eee;
+}  */
+
+main .main_block{
+    display: flex;
+}
+main .sidebar{
+    flex: 0 0 auto;
+    width: 25%;
+}
+main .main_right{
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+main .sidebar .widget .widget_header{
+    font-size: 18px;
+    color: #1c1b1a;
+    border-left: 3px solid #cf0000;
+    padding: 12px 14px;
+    line-height: 1;
+}
 
 /* 
 header .header_bottom nav{
