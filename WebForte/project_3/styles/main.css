@@ -1,48 +1,44 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 a{
     text-decoration: none;
     transition: .3s all ease;
-    color: #1c1b1a;
-
 }
-
 body{
     font-family: 'Proxima Nova Rg';
     color: #1c1b1a;
 }
+
 .container{
     width: 1170px;
     margin: 0 auto;
 }
-
-/* Header Top qismi */
+/* Header qismi uchun */
 header{
     margin-bottom: 40px;
 }
+/* Header top uchun */
 header .header_top{
-    background-color: #30322e;
+    background-color: #30302e;
     padding: 15px 0;
 }
-header .header_top .container,
-header .header_middle .header_block{
+header .header_top .container{
     display: flex;
     justify-content: space-between;
 }
 header .header_top ul{
+    list-style: none;
     display: flex;
-    list-style:none;
 }
 header .header_top ul li,
 header .header_top ul li a{
     font-size: 14px;
-    color:#fff;
+    color: #fff;
 }
 header .header_top ul li a:hover{
-    color:#fcd106;
+    color: #fcd106;
 }
 header .header_top .header_top_left ul li{
     margin-right: 35px;
@@ -50,12 +46,13 @@ header .header_top .header_top_left ul li{
 header .header_top .header_top_right ul li{
     margin-right: 3px;
 }
-/* Header Middle qismi */
+
+/* Header Middle qismi uchun */
+
 header .header_middle{
     background-color: #fcd106;
     padding: 30px 0;
 }
-/* Header_block yuchun tepada display:flex */
 
 header .header_middle .header_block{
     display: flex;
@@ -71,16 +68,14 @@ header .header_middle .header_block .header_search{
     flex: 0 0 auto;
     width: 50%;
 }
-
 header .header_middle .header_block .header_search form{
     display: flex;
 }
-
 header .header_middle .header_block .header_search form input{
     font-size: 14px;
     padding: 12px 17px;
     flex: 0 0 auto;
-    width: calc(76% - 35px);
+    width: calc(76% - 34px);
     outline: none;
     border: 1px solid #e1bc0b;
     border-right: 0;
@@ -92,10 +87,10 @@ header .header_middle .header_block .header_search form button{
     flex: 0 0 auto;
     width: 24%;
     background-color: #ce0000;
-    color: #fff;
     border: none;
-    padding-left: 27px;
+    color: #ffffff;
     cursor: pointer;
+    padding-left: 27px;
     position: relative;
     background-image: url('../images/search.png');
     background-position: 30px center;
@@ -144,7 +139,6 @@ header .header_middle .header_contact .header_call_back a{
     border-bottom: 1px solid #f1ad04;
 }
 /* Header Bottom uchun */
-
 header .header_bottom{
     background-color: #f6f5f3;
     padding: 15px 0;
@@ -153,15 +147,15 @@ header .header_bottom ul{
     list-style: none;
     display: flex;
 }
-header .header_bottom li{
+header .header_bottom ul li{
     margin-right: 35px;
 }
-header .header_bottom li a{
+header .header_bottom ul li a{
     display: flex;
     color: #1c1b1a;
     position: relative;
 }
-header .header_bottom li:not(.cart) a::before{
+header .header_bottom ul li:not(.cart) a:before{
     content: '>';
     margin-right: 7px;
     color: #e52e2e;
@@ -172,41 +166,49 @@ header .header_bottom li:not(.cart) a::before{
     position: absolute;
     left: -30px;
 }
-header .header_bottom li a.active::before,
-header .header_bottom li a:hover:before{
+header .header_bottom ul li a.active:before,
+header .header_bottom ul li a:hover:before{
     opacity: 1;
     transform: translateX(0);
     left: -15px;
 }
 
-header .header_bottom li.cart{
+header .header_bottom ul li.cart{
     margin-right: 0;
     margin-left: auto;
 }
 
-header .header_bottom li.cart a{
-    background-image: url('../images/korzina.png');
+header .header_bottom ul li.cart a{
+    /* background-image: url('../images/cart2.png');
     background-repeat: no-repeat;
-    background-position: left  0;
+    background-position: -60px 0; */
     padding-left: 30px;
-    padding-right: 50px;
+    transition: .3s all ease;
+    position: relative;
+}
+header .header_bottom ul li.cart a:before{
+    content: '';
+    display: block;
+    height: 16px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    background-image: url('../images/cart2.png');
+    background-position: -60px 0;
     transition: .3s all ease;
 }
-
-header .header_bottom li.cart a:hover{
-    background-position:  0 bottom;
-    color: #e52e2e;
+header .header_bottom ul li.cart a:hover{
+    color: red;
+}
+header .header_bottom ul li.cart a:hover::before{
+    background-position: 0 0;
 }
 
-
-
-/* Main content */
-/* main .sidebar, main .main_right{
-    height: 500px;
-    outline: 1px solid red;
-    background-color: #eee;
-}  */
-
+/* Main Content */
+main{
+    margin-bottom: 45px;
+}
 main .main_block{
     display: flex;
 }
@@ -233,46 +235,43 @@ main .sidebar .widget .widget_header{
     margin-bottom: 30px;
 }
 main .sidebar .widget.catalog .widget_body ul{
-  list-style: none;
+    list-style: none;
 }
 main .sidebar .widget.catalog .widget_body ul li{
     line-height: 1;
     margin-bottom: 25px;
-    position: relative;
 }
 main .sidebar .widget.catalog .widget_body ul li:last-child{
     margin-bottom: 0;
 }
-
 main .sidebar .widget.catalog .widget_body ul li a{
     font-size: 14px;
     color: #1c1b1a;
+    position: relative;
 }
-
-main .sidebar .widget.catalog .widget_body ul li a::before{
-  content: '>';
-  color: #e52e2e;
-  font-family: 'Proxima Nova Bl';
-  font-weight: bold;
-  opacity: 0;
-  transition: .3s all ease;
-  position: absolute;
-  left: -15px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}  
-main .sidebar .widget.catalog .widget_body ul li a.active,
+main .sidebar .widget.catalog .widget_body ul li a:before{
+    content: '>';
+    color: #e52e2e;
+    font-family: 'Proxima Nova Bl';
+    font-weight: 900;
+    transition: .3s all ease;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+main .sidebar .widget.catalog .widget_body ul li.active a,
 main .sidebar .widget.catalog .widget_body ul li a:hover{
     padding-left: 15px;
 }
-main .sidebar .widget.catalog .widget_body ul li a.active:before,
-main .sidebar .widget.catalog .widget_body ul li a:hover::before{
-    opacity: 1;
-    transform: translateX(0);
+main .sidebar .widget.catalog .widget_body ul li.active a:before,
+main .sidebar .widget.catalog .widget_body ul li a:hover:before{
     left: 0;
+    opacity: 1;
 }
 
 main .sidebar .widget.subscribe .widget_header{
@@ -281,20 +280,21 @@ main .sidebar .widget.subscribe .widget_header{
 }
 main .sidebar .widget.subscribe .widget_header .widget_title{
     font-size: 24px;
-	font-family: 'Proxima Nova Lt';
+    font-family: 'Proxima Nova Lt';
     font-weight: 600;
     margin-bottom: 15px;
 }
-
 main .sidebar .widget.subscribe .widget_header .widget_subtitle{
     font-size: 14px;
     color: #696969;
+    font-family: 'Proxima Nova Lt';
     font-weight: 600;
-	font-family: 'Proxima Nova Lt';
+}
+main .sidebar .widget.subscribe .widget_body{
+    max-width: 200px;
 }
 main .sidebar .widget.subscribe .widget_body form{
     display: flex;
-    max-width: 200px;
     flex-direction: column;
 }
 main .sidebar .widget.subscribe .widget_body form input{
@@ -305,68 +305,30 @@ main .sidebar .widget.subscribe .widget_body form input{
     outline: none;
     box-sizing: border-box;
 }
-
 main .sidebar .widget.subscribe .widget_body form input::placeholder{
     color: #696969;
 }
-main .main_right .banner .banner_item .button,
 main .sidebar .widget.subscribe .widget_body form button{
     padding: 13px 0;
     background-color: #fcd106;
     border: none;
+    font-family: 'Proxima Nova Lt';
     font-weight: 600;
-	font-family: 'Proxima Nova Lt';
     cursor: pointer;
     margin-bottom: 20px;
     transition: .3s all ease;
     border: 2px solid #fcd106;
 }
-
-main .main_right .banner .banner_item .button:hover,
 main .sidebar .widget.subscribe .widget_body form button:hover{
     background-color: #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
 }
 main .sidebar .widget.subscribe .widget_body p{
     font-size: 12px;
     color: #696969;
 }
 
-/* Main Right Block */
-/* main .main_right .banner{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main .main_right .banner .banner_item .content{
-    position: absolute;
-    top: 2px;
-    bottom: 7px;
-    background: rgb(0, 0, 0); /* Fallback color */
-    /* background: rgba(0, 0, 0, 0.2); Black background with 0.5 opacity */
-    /* color: #fff;
-    padding: 60px 20px;
-  
-}
- 
-main .main_right .banner .banner_item .item_title{
-    position: absolute;
-    font-size: 32px;
-    color:#FFF;
-    text-shadow: 3px 5px 3px rgba(0, 0, 0, .5);
-    margin-bottom: 30px;
-}
-main .main_right .banner .banner_item .button{
-    position: absolute;
-    margin-top: 25px;
-    padding: 13px 24px;
-
-} */
-
-
-/* Main Right Block */
+/* Main Right Block uchun */
 main .main_right .banner{
     display: flex;
     justify-content: space-between;
@@ -564,7 +526,7 @@ main .main_right .products .product_item .product_action .add_to_compare a{
 }
 
 
-/*  Pagination  */
+/*  Pagination Sahifa sanalishi */
 .pagination ul{
     list-style: none;
     display: flex;
@@ -592,7 +554,7 @@ main .main_right .products .product_item .product_action .add_to_compare a{
 }
 
 
-/* About */
+/* About  qismi uchun*/
 .about{
     margin-bottom: 100px;
 }
@@ -608,7 +570,7 @@ main .main_right .products .product_item .product_action .add_to_compare a{
 }
 
 
-/* Advantages */
+/* Advantages Yani afzalliklar qismi uchun */
 .advantages{
     background-color: #fcd106;
     padding: 40px 0;
@@ -632,7 +594,7 @@ main .main_right .products .product_item .product_action .add_to_compare a{
     padding: 0 30px;
 }
 
-/* Footer */
+/* Footer  qismi uchun*/
 footer{
     background-color: #30302e;
     padding: 50px 0;
@@ -672,7 +634,7 @@ footer .footer_left .footer_links .link_items ul li a{
 footer .footer_left .footer_links .link_items ul li a:hover{
     color: #fcd106;
 }
-
+/* Pesponsiv yani moslashunchanligi uchun 1200px da */
 @media (max-width: 1200px){
     .container{
         width: 1000px;
@@ -706,6 +668,8 @@ footer .footer_left .footer_links .link_items ul li a:hover{
     }
 }
 
+/* Pesponsiv yani moslashunchanligi uchun 1025px da */
+
 @media (max-width: 1025px){
     .container{
         width: 760px;
@@ -725,6 +689,8 @@ footer .footer_left .footer_links .link_items ul li a:hover{
         width: 100%;
     }
 }
+
+/* Pesponsiv yani moslashunchanligi uchun 769px da */
 
 @media (max-width: 769px){
     .wrapper{
@@ -797,6 +763,8 @@ footer .footer_left .footer_links .link_items ul li a:hover{
         margin-bottom: 10px;
     }
 }
+
+/* Pesponsiv yani moslashunchanligi uchun 576px da */
 
 @media (max-width: 576px){
     .container{
@@ -876,8 +844,4 @@ footer .footer_left .footer_links .link_items ul li a:hover{
         width: 50%;
         margin-bottom: 15px;
     }
-}
-
-@media (max-width: 480px){
-    
 }
