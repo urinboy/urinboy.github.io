@@ -1,0 +1,844 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    transition: .3s all ease;
+}
+body{
+    font-family: 'Proxima Nova Rg';
+    color: #1c1b1a;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+header{
+    margin-bottom: 40px;
+}
+header .header_top{
+    background-color: #30302e;
+    padding: 15px 0;
+}
+header .header_top .container{
+    display: flex;
+    justify-content: space-between;
+}
+header .header_top ul{
+    list-style: none;
+    display: flex;
+}
+header .header_top ul li,
+header .header_top ul li a{
+    font-size: 14px;
+    color: #fff;
+}
+header .header_top ul li a:hover{
+    color: #fcd106;
+}
+header .header_top .header_top_left ul li{
+    margin-right: 35px;
+}
+header .header_top .header_top_right ul li{
+    margin-right: 3px;
+}
+
+header .header_middle{
+    background-color: #fcd106;
+    padding: 30px 0;
+}
+
+header .header_middle .header_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_middle .header_block .header_brand,
+header .header_middle .header_block .header_contact{
+    flex: 0 0 auto;
+    width: 25%;
+}
+header .header_middle .header_block .header_search{
+    flex: 0 0 auto;
+    width: 50%;
+}
+header .header_middle .header_block .header_search form{
+    display: flex;
+}
+header .header_middle .header_block .header_search form input{
+    font-size: 14px;
+    padding: 12px 17px;
+    flex: 0 0 auto;
+    width: calc(76% - 34px);
+    outline: none;
+    border: 1px solid #e1bc0b;
+    border-right: 0;
+}
+header .header_middle .header_block .header_search form input::placeholder{
+    color: #000;
+}
+header .header_middle .header_block .header_search form button{
+    flex: 0 0 auto;
+    width: 24%;
+    background-color: #ce0000;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 27px;
+    position: relative;
+    background-image: url('../images/search.png');
+    background-position: 30px center;
+    background-repeat: no-repeat;
+}
+/* header .header_middle .header_block .header_search form button:before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/search.png');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 30px;
+} */
+
+
+header .header_middle .header_contact{
+    text-align: right;
+}
+header .header_middle .header_contact .header_worktime{
+    color: #343331;
+    margin-bottom: 5px;
+}
+header .header_middle .header_contact .header_phone a{
+    color: #343331;
+    font-size: 28px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+}
+header .header_middle .header_contact .header_phone a span{
+    color: #ce0000;
+}
+header .header_middle .header_contact .header_phone a:hover{
+    color: #ce0000;
+}
+header .header_middle .header_contact .header_phone a:hover span{
+    color: #343331;
+}
+header .header_middle .header_contact .header_call_back a{
+    color: #ce0000;
+    border-bottom: 1px solid #f1ad04;
+}
+
+header .header_bottom{
+    background-color: #f6f5f3;
+    padding: 15px 0;
+}
+header .header_bottom ul{
+    list-style: none;
+    display: flex;
+}
+header .header_bottom ul li{
+    margin-right: 35px;
+}
+header .header_bottom ul li a{
+    display: flex;
+    color: #1c1b1a;
+    position: relative;
+}
+header .header_bottom ul li:not(.cart) a:before{
+    content: '>';
+    margin-right: 7px;
+    color: #e52e2e;
+    font-family: 'Proxima Nova Bl';
+    font-weight: 900;
+    opacity: 0;
+    transition: .3s all ease;
+    position: absolute;
+    left: -30px;
+}
+header .header_bottom ul li a.active:before,
+header .header_bottom ul li a:hover:before{
+    opacity: 1;
+    transform: translateX(0);
+    left: -15px;
+}
+
+header .header_bottom ul li.cart{
+    margin-right: 0;
+    margin-left: auto;
+}
+header .header_bottom ul li.cart a{
+    /* background-image: url('../images/cart2.png');
+    background-repeat: no-repeat;
+    background-position: -60px 0; */
+    padding-left: 30px;
+    transition: .3s all ease;
+    position: relative;
+}
+header .header_bottom ul li.cart a:before{
+    content: '';
+    display: block;
+    height: 16px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    background-image: url('../images/cart2.png');
+    background-position: -60px 0;
+    transition: .3s all ease;
+}
+header .header_bottom ul li.cart a:hover{
+    color: red;
+}
+header .header_bottom ul li.cart a:hover::before{
+    background-position: 0 0;
+}
+
+
+
+/* Main Content */
+main{
+    margin-bottom: 45px;
+}
+main .main_block{
+    display: flex;
+}
+main .sidebar{
+    flex: 0 0 auto;
+    width: 25%;
+    padding-right: 15px;
+}
+main .main_right{
+    flex: 0 0 auto;
+    width: calc(75% - 30px);
+    padding-left: 15px;
+}
+
+main .sidebar .widget{
+    margin-bottom: 35px;
+}
+main .sidebar .widget .widget_header{
+    font-size: 18px;
+    color: #1c1b1a;
+    border-left: 3px solid #cf0000;
+    line-height: 1;
+    padding: 12px 0 12px 14px;
+    margin-bottom: 30px;
+}
+main .sidebar .widget.catalog .widget_body ul{
+    list-style: none;
+}
+main .sidebar .widget.catalog .widget_body ul li{
+    line-height: 1;
+    margin-bottom: 25px;
+}
+main .sidebar .widget.catalog .widget_body ul li:last-child{
+    margin-bottom: 0;
+}
+main .sidebar .widget.catalog .widget_body ul li a{
+    font-size: 14px;
+    color: #1c1b1a;
+    position: relative;
+}
+main .sidebar .widget.catalog .widget_body ul li a:before{
+    content: '>';
+    color: #e52e2e;
+    font-family: 'Proxima Nova Bl';
+    font-weight: 900;
+    transition: .3s all ease;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+main .sidebar .widget.catalog .widget_body ul li.active a,
+main .sidebar .widget.catalog .widget_body ul li a:hover{
+    padding-left: 15px;
+}
+main .sidebar .widget.catalog .widget_body ul li.active a:before,
+main .sidebar .widget.catalog .widget_body ul li a:hover:before{
+    left: 0;
+    opacity: 1;
+}
+
+main .sidebar .widget.subscribe .widget_header{
+    padding: 0;
+    border: 0;
+}
+main .sidebar .widget.subscribe .widget_header .widget_title{
+    font-size: 24px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+main .sidebar .widget.subscribe .widget_header .widget_subtitle{
+    font-size: 14px;
+    color: #696969;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+}
+main .sidebar .widget.subscribe .widget_body{
+    max-width: 200px;
+}
+main .sidebar .widget.subscribe .widget_body form{
+    display: flex;
+    flex-direction: column;
+}
+main .sidebar .widget.subscribe .widget_body form input{
+    font-size: 14px;
+    padding: 13px 15px;
+    border: 1px solid #cecece;
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: border-box;
+}
+main .sidebar .widget.subscribe .widget_body form input::placeholder{
+    color: #696969;
+}
+main .sidebar .widget.subscribe .widget_body form button{
+    padding: 13px 0;
+    background-color: #fcd106;
+    border: none;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .3s all ease;
+    border: 2px solid #fcd106;
+}
+main .sidebar .widget.subscribe .widget_body form button:hover{
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+main .sidebar .widget.subscribe .widget_body p{
+    font-size: 12px;
+    color: #696969;
+}
+
+
+
+
+
+/* Main Right Block */
+main .main_right .banner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+main .main_right .banner img{
+    width: 100%;
+}
+main .main_right .products{
+    margin-bottom: 40px;
+}
+main .main_right .products .products_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+main .main_right .products .products_header .products_left{
+    display: flex;
+}
+main .main_right .products .products_header .products_left .products_title{
+    font-size: 18px;
+    border-left: 3px solid #cf0000;
+    line-height: 1;
+    padding: 14px 15px;
+    margin-right: 45px;
+}
+main .main_right .products .products_header .products_left .products_filter select{
+    height: 100%;
+    padding: 12px 40px 12px 14px;
+    border: 1px solid #aaa9a3;
+    appearance: none;
+    background-image: url('../images/select_arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 14px) center;
+    outline: none;
+}
+main .main_right .products .products_header .products_navigation{
+    display: flex;
+}
+main .main_right .products .products_header .products_navigation a{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #1c1b1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main_right .products .products_header .products_navigation a:hover{
+    background-color: #fcd106;
+    border-color: #fcd106;
+}
+main .main_right .products .products_header .products_navigation a img{
+    width: 8px;
+    height: 10px;
+}
+main .main_right .products .products_header .products_navigation a.next{
+    margin-left: 30px;
+    transform: rotate(180deg);
+}
+
+main .main_right .products .products_body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main .main_right .products .product_item{
+    border: 1px solid #e8e8e8;
+    flex: 0 0 auto;
+    width: calc(33% - 59px);
+    padding: 14px 19px;
+    position: relative;
+    transition: .3s all ease;
+}
+main .main_right .products .product_item:hover{
+    box-shadow: 0 3px 7px rgba(28,27,26,.35);
+}
+main .main_right .products .product_item:hover .product_name{
+    color: #cf0000;
+    text-decoration: underline;
+}
+
+main .main_right .products .product_item:hover .add_to_compare{
+    color: #1c1b1a;
+    text-decoration: underline;
+}
+
+main .main_right .products .product_item .product_articul{
+    font-size: 14px;
+    color: #898181;
+}
+main .main_right .products .product_item .product_sale{
+    padding: 10px 19px;
+    background-color: #cf0000;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    line-height: 1;
+}
+main .main_right .products .product_item .product_sale:after{
+    content: '';
+    display: block;
+    height: 34px;
+    width: 18px;
+    background-image: url('../images/sale_tail.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -18px;
+    top: 0;
+    background-size: cover;
+}
+main .main_right .products .product_item .product_image img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+main .main_right .products .product_item .product_text .product_name{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+main .main_right .products .product_item .product_text .product_price{ 
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 20px;
+}
+main .main_right .products .product_item .product_text .old_price{
+    color: #949392;
+    margin-top: 15px;
+}
+main .main_right .products .product_item .product_text .card_club{
+    position: absolute;
+    font-size: 14px;
+    width: 60px;
+    right: 0;
+    top: -7px;
+}
+
+main .main_right .products .product_item .product_action .product_action_top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+}
+main .main_right .products .product_item .product_action .product_action_top .add_to_cart{
+    display: inline-block;
+    padding: 14px 20px 14px 45px;
+    background-color: #fcd106;
+    color: #1c1b1a;
+    font-size: 14px;
+    background-image: url('../images/cart.png');
+    background-repeat: no-repeat;
+    background-position: 15px 12px;
+}
+main .main_right .products .product_item .product_action .product_action_top .add_to_cart:hover{
+    background-position: 15px -50px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+main .main_right .products .product_item .product_action .product_action_top input{
+    width: 46px;
+    height: 40px;
+    padding-left: 14px;
+    border: 1px solid #e8e8e8;
+}
+main .main_right .products .product_item .product_action .product_action_top input::-webkit-outer-spin-button,
+main .main_right .products .product_item .product_action .product_action_top input::-webkit-inner-spin-button{
+    appearance: none;
+}
+main .main_right .products .product_item .product_action .product_action_top .product_counter{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 7px;
+    top: 4px;
+}
+main .main_right .products .product_item .product_action .product_action_top .product_counter button{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #938b8b;
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    height: 10px;
+}
+main .main_right .products .product_item .product_action .product_action_top .product_counter button.add{
+    margin-bottom: 5px;
+}
+main .main_right .products .product_item .product_action .add_to_compare a{
+    font-size: 14px;
+    color: #898181;
+}
+
+
+/*  Pagination  */
+.pagination ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.pagination ul li{
+    margin: 0 10px;
+}
+.pagination ul li.disabled,
+.pagination ul li a{
+    height: 22px;
+    width: 22px;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c1b1a;
+}
+.pagination ul li.disabled{
+    background-color: #eee;   
+}
+.pagination ul li a:hover{
+    background-color: #fcd106;
+    border-color: #fcd106;
+}
+
+
+/* About */
+.about{
+    margin-bottom: 100px;
+}
+.about h3{
+    font-size: 24px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.about p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* Advantages */
+.advantages{
+    background-color: #fcd106;
+    padding: 40px 0;
+}
+.advantages .advantages_block{
+    display: flex;
+    text-align: center;
+}
+.advantages .advantages_block .advantage_item .advantage_image{
+    margin-bottom: 25px;
+}
+.advantages .advantages_block .advantage_item .advantage_title{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.advantages .advantages_block .advantage_item .advantage_description{
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 30px;
+}
+
+/* Footer */
+footer{
+    background-color: #30302e;
+    padding: 50px 0;
+}
+footer .footer_block{
+    display: flex;
+}
+footer .footer_left{
+    flex: 0 0 auto;
+    width: 66.6%;
+}
+footer .footer_right{
+    flex: 0 0 auto;
+    width: 33.4%;
+}
+
+footer .footer_left{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer_left .footer_links .link_title{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+footer .footer_left .footer_links .link_items ul{
+    list-style: none;
+}
+footer .footer_left .footer_links .link_items ul li{
+    margin-bottom: 25px;
+}
+footer .footer_left .footer_links .link_items ul li a{
+    color: #c3c3c0;
+}
+footer .footer_left .footer_links .link_items ul li a:hover{
+    color: #fcd106;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 1000px;
+    }
+    header .header_bottom ul li{
+        margin-right: 15px;
+    }
+    header .header_middle .header_block .header_brand{
+        width: 20%;
+    }
+    header .header_middle .header_block .header_brand img{
+        width: 100%;
+    }
+    main .main_right .products .product_item .product_image img{
+        height: 170px;
+    }
+    main .main_right .products .product_item{
+        width: calc(33% - 50px);
+    }
+    main .main_right .products .product_item .product_action .product_action_top .add_to_cart{
+        padding: 14px 20px 14px 30px;
+        background-position: 5px 13px;
+    }
+    main .main_right .banner.banner1 .banner_item:first-child{
+        flex: 0 0 auto;
+        width: 54%;
+    }
+    main .main_right .banner.banner1 .banner_item:last-child{
+        flex: 0 0 auto;
+        width: 42%;
+    }
+}
+
+@media (max-width: 1025px){
+    .container{
+        width: 760px;
+    }
+    header .header_middle .header_block .header_search form button{
+        padding-left: 15px;
+        background-position: 10px center;
+    }
+    header .header_bottom ul li{
+        margin-right: 5px;
+    }
+    main .main_right .products .product_item{
+        width: calc(50% - 50px);
+        margin-bottom: 20px;
+    }
+    main .sidebar .widget.banner .widget_body img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 769px){
+    .wrapper{
+        overflow: hidden;
+    }
+    .container{
+        width: 570px;
+    }
+    header .header_top .header_top_left ul li{
+        margin-right: 10px;
+    }
+    header .header_middle .header_contact .header_worktime{
+        font-size: 12px;
+    }
+    header .header_middle .header_contact .header_phone a{
+        font-size: 20px;
+    }
+    header .header_bottom ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header .header_bottom ul li{
+        flex: 0 0 auto;
+        width: 24%;
+        margin-bottom: 10px;
+    }
+    header .header_bottom ul li.cart{
+        width: 35%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    header .header_bottom ul li.cart a{
+        padding: 15px 20px;
+    }
+    header .header_bottom ul li.cart a:before{
+        left: 15px;
+        top: 15px;
+    }
+    header .header_bottom ul li a{
+        background-color: #fff;
+        border: 1px solid #ccc;
+        justify-content: center;
+    }
+    header .header_bottom ul li a.active:before, header .header_bottom ul li a:hover:before{
+        content: none;
+    }
+    main .main_block{
+        flex-wrap: wrap;
+    }
+    main .sidebar,main .main_right{
+        width: 100%;
+        padding-left: 0;
+    }
+    main .sidebar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main .sidebar .widget{
+        flex: 0 0 auto;
+        width: 45%;
+    }
+    main .sidebar .widget.subscribe .widget_body{
+        max-width: 100%;
+    }
+    footer .footer_left{
+        width: 100%;
+    }
+    footer .footer_left .footer_links .link_items ul li{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
+    header .header_top .header_top_left ul{
+        flex-direction: column;
+    }
+    header .header_middle .header_block{
+        flex-wrap: wrap;
+    }
+    header .header_middle .header_block .header_brand,
+    header .header_middle .header_block .header_search,
+    header .header_middle .header_block .header_contact{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    header .header_middle .header_contact .header_phone a{
+        font-size: 30px;
+    }
+    header .header_middle .header_contact .header_worktime{
+        font-size: 17px;
+    }
+    header .header_bottom ul li,header .header_bottom ul li.cart{
+        width: 47%;
+    }
+    header .header_bottom ul li a,header .header_bottom ul li.cart a{
+        padding: 15px;
+        margin-right: 5px;
+    }
+    main .sidebar .widget{
+        width: 100%;
+    }
+    main .sidebar .widget.catalog .widget_body ul li{
+        margin-bottom: 15px;
+    }
+    main .sidebar .widget.catalog .widget_body ul li a{
+        font-size: 24px;
+    }
+    main .sidebar .widget .widget_header{
+        font-size: 28px;
+    }
+    main .main_right .products .product_item{
+        width: calc(100% - 38px);
+    }
+    main .main_right .products .product_item .product_image img{
+        height: 245px;
+        object-fit: contain;
+    }
+    main .main_right .products .product_item .product_action .product_action_top .add_to_cart{
+        padding: 14px 40px;
+    }
+    main .main_right .products .products_header{
+        flex-wrap: wrap;
+    }
+    main .main_right .products .products_header .products_left{
+        margin-bottom: 15px;
+    }
+    main .main_right .products .products_header .products_navigation{
+        flex: 0 0 auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .advantages .advantages_block{
+        flex-wrap: wrap;
+    }
+    .advantages .advantages_block .advantage_item{
+        margin-bottom: 30px;
+    }
+    footer .footer_left{
+        flex-wrap: wrap;
+    }
+    footer .footer_left .footer_links{
+        flex: 0 0 auto;
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px){
+    
+}

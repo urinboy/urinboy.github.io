@@ -1,0 +1,189 @@
+$(document).ready(function() {
+
+    $('.simg').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+
+    $('.popular-services .repair-price a,.work-contact .work-btn button').on('click',function(e){
+        e.preventDefault();
+        $('#exampleModalCenter').modal('show');
+    })
+
+    $('input[name=phone]').mask('+7 (999) 999-99-99');
+    $('input[name=contactForm]').mask('+7 (999) 999-99-99');
+
+    
+    $('.view-link').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().parent().addClass('show');
+        if($('.services-list').hasClass('small')){
+            $('.services-list').removeClass('small').addClass('big');
+        }else{
+            $('.services-list').removeClass('big').addClass('small');
+        }
+    });
+
+    $('.return_back').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().parent().parent().removeClass('show');
+        if($('.services-list').hasClass('small')){
+            $('.services-list').removeClass('small').addClass('big');
+        }else{
+            $('.services-list').removeClass('big').addClass('small');
+        }
+    })
+
+    // OUR team
+
+    $('.brands-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 10,
+        navText: ['<img src="./images/brand-icon-left.svg" />', '<img src="./images/brand-icon-left.svg" class="icon-x" />'],
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 7
+            },
+            1000: {
+                items: 7
+            }
+        }
+    });
+
+    $('.customer-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 10,
+        navText: ['<img src="./images/brand-icon-left.svg" />', '<img src="./images/brand-icon-left.svg" class="icon-x" />'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+
+    // 
+
+
+    $('.certificates-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 10,
+        navText: ['<img src="./images/brand-icon-left.svg" />', '<img src="./images/brand-icon-left.svg" class="icon-x" />'],
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+
+
+    // ************************************************************
+
+    $('.cleaning-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 10,
+        navText: ['<img src="./images/brand-icon-left.svg" />', '<img src="./images/brand-icon-left.svg" class="icon-x" />'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+
+    // **********************************************************************
+
+    $('.description-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 10,
+        navText: ['<img src="./images/brand-icon-left.svg" />', '<img src="./images/brand-icon-left.svg" class="icon-x" />'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+
+});
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+
+// const callBlue = document.querySelector("#call-blue");
+
+// callBlue.addEventListener("click", function() {
+//     $("html, body").animate({ scrollTop: 0 }, "slow");
+//     window.scrollTo({ top: 100, left: 100, behavior: 'smooth' });
+// })
+
+
+/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+ /*Scroll to top when arrow up clicked END*/
