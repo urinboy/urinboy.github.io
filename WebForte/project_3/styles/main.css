@@ -615,7 +615,8 @@ footer .footer_left{
     display: flex;
     justify-content: space-between;
 }
-footer .footer_left .footer_links .link_title{
+footer .footer_left .footer_links .link_title,
+footer .footer_right .footer_links .link_title{
     font-size: 16px;
     color: #ffffff;
     font-family: 'Proxima Nova Lt';
@@ -844,4 +845,8 @@ footer .footer_left .footer_links .link_items ul li a:hover{
         width: 50%;
         margin-bottom: 15px;
     }
+}
+
+footer .footer_right .footer_links .link_items ul li{
+    list-style: none;
 }
