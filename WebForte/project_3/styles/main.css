@@ -635,6 +635,35 @@ footer .footer_left .footer_links .link_items ul li a{
 footer .footer_left .footer_links .link_items ul li a:hover{
     color: #fcd106;
 }
+
+
+footer .footer_right .footer_links .link_items ul li{
+    list-style: none;
+    color: #c3c3c0;
+    position: relative;
+}
+footer .footer_right .footer_links .link_items ul li a{
+    color: #fcd106;
+    /* border-bottom: 1px solid #fcd106; */
+    line-height: 2;
+}
+
+footer .footer_right .footer_links .link_items ul li ul{
+    display: flex;
+}
+
+footer .footer_right .footer_links .link_items ul li ul li a img{
+    width: 42px;
+    height: 42px;
+    margin-right: 5px;
+}
+
+footer .footer_right .footer_links .link_items ul li ul.payment_icons li a img{
+    width: 100%;
+}
+
+
+
 /* Pesponsiv yani moslashunchanligi uchun 1200px da */
 @media (max-width: 1200px){
     .container{
@@ -757,6 +786,10 @@ footer .footer_left .footer_links .link_items ul li a:hover{
     main .sidebar .widget.subscribe .widget_body{
         max-width: 100%;
     }
+    
+    footer .footer_block{
+        flex-wrap: wrap;
+    }
     footer .footer_left{
         width: 100%;
     }
@@ -837,16 +870,20 @@ footer .footer_left .footer_links .link_items ul li a:hover{
     .advantages .advantages_block .advantage_item{
         margin-bottom: 30px;
     }
-    footer .footer_left{
+    footer .footer_left,
+    footer .footer_rigth{
         flex-wrap: wrap;
     }
-    footer .footer_left .footer_links{
+        footer .footer_left .footer_links{
         flex: 0 0 auto;
         width: 50%;
         margin-bottom: 15px;
     }
-}
-
-footer .footer_right .footer_links .link_items ul li{
-    list-style: none;
+    
+    footer .footer_block,
+    footer .footer_left .footer_links{
+            flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
