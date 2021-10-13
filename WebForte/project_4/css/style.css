@@ -8,7 +8,14 @@ body{
     font-family: 'Montserrat Alternates Regular';
     color: #000;
 }
-
+/* #preloader{
+    background-color: #000 url(../images/128x128.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+} */
 .container{
     width: 1140px;
     margin: 0 auto;
