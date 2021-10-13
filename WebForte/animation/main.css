@@ -1,0 +1,60 @@
+body{
+    background-color: #eee;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ddd;
+    animation-name: aylantirish;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-right: 40px;
+}
+.box1{
+    background-color: rebeccapurple;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* animation-delay: 1s; */
+}
+.box2{
+    background-color: yellow;
+    animation-timing-function: ease-in;
+    /* animation-delay: 2s; */
+}   
+.box3{
+    background-color: blue;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* animation-delay: 3s; */
+}
+.box:hover{
+    animation-play-state: running;
+}
+/* Animatsiya boshlandi */
+/* @keyframes aylantirish {
+    from{
+        transform: rotate(0deg) scale(1);
+        background-color: rebeccapurple;
+    }
+    to{
+        transform: rotate(45deg) scale(1.5);
+        background-color: yellow;
+    }
+} */
+
+/* Ikkinchi varianti */
+@keyframes aylantirish {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

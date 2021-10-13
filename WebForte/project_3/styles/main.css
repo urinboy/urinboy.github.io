@@ -796,6 +796,11 @@ footer .footer_right .footer_links .link_items ul li ul.payment_icons li a img{
     footer .footer_left .footer_links .link_items ul li{
         margin-bottom: 10px;
     }
+    footer .footer_right .footer_links .link_items ul li .payment img{
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /* Pesponsiv yani moslashunchanligi uchun 576px da */
