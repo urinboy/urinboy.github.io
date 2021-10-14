@@ -68,7 +68,7 @@ header{
     top: 0;
     background-color: #f1f3fc;
     border-bottom: 1px solid #ddd;
-    z-index: 10;
+    z-index: 30;
 }
 header .header_block{
     display: flex;
@@ -187,6 +187,8 @@ header .header_block .contacts .call_back a{
     box-shadow: 0px 4px 25px rgba(202, 201, 201, 0.25);
     border-radius: 10px;
     transform: translateY(-60px);
+    margin-bottom: 60px;
+    flex-wrap: wrap;
 }
 .about .advantages .advantage_item {
     display: flex;
@@ -339,11 +341,22 @@ header .header_block .contacts .call_back a{
     background-image: url('../images/maps.png');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+.contacts_block #map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 .contact_card{
     background-color: #fff;
     padding: 60px;
     width: 45%;
+    position: relative;
+    z-index: 20;
 }
 .contact_card .contact_title{
     font-family: 'Montserrat Alternates Bold';
@@ -430,6 +443,8 @@ footer .footer_block .footer_service ul li a{
 .footer_contact .social_networks ul{
     list-style: none;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer_contact .social_networks ul li:first-child{
@@ -445,4 +460,60 @@ footer .footer_block .footer_service ul li a{
 .footer_contact .social_networks ul li img{
     width: 30px;
     height: 30px;
+}
+
+.header_mobile{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px){ /* MINI LAPTOP */
+}
+@media (max-width: 1025px){ /* BIG PLANSHETS */
+}
+@media (max-width: 769px){ /* SMALL PLANSHETS */
+}
+@media (max-width: 576px){ /* MINI LAPTOP */
+}
+@media (max-width: 480px){ /* MINI LAPTOP */
+    .wrapper{
+        overflow: hidden;
+    }
+    .container{
+        width: 100%;
+    }
+    header .header_block{
+        display: none; 
+    }
+    .header_mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .header_mobile .phone_number a{
+        font-size: 21px;
+        font-family: 'Montserrat Alternates Bold';
+        line-height: 25px;
+        text-decoration: none;
+        color: #000;
+    }
+    /* .header_mobile .phone_number a::before{
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url('../images/phone.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        z-index: 31;
+        left: -30px;
+        top: 3px;
+    } */
+    .main_block .main_r
+}
+@media (max-width: 320px){ /* MINI LAPTOP */
 }
