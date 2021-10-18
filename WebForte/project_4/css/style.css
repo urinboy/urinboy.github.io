@@ -397,13 +397,55 @@ header .header_block .contacts .call_back a{
 }
 footer{
     background: #0052B4;
-    padding: 33px 0 0 56px;
-}
+    padding: 40px 0 50px 0;
+    color: #fff;
+} 
 footer .footer_block{
     display: flex;
-    justify-content: space-between;
-    color: white;
+    /* justify-content: space-between; */
+} 
+footer .footer_block .footer_col{
+    flex: 0 0 auto;
+    width: 33%;
 }
+footer .footer_block .footer_col .footer_about{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #e2e2e2;
+    margin-bottom: 55px;
+}
+
+footer .footer_block .footer_col .footer_about img{
+    width: 115px;
+}
+
+footer .footer_block .footer_col .footer_confidential{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+footer .footer_block .footer_col .footer_confidential p{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+footer .footer_block .footer_col  .services{
+    list-style: none;
+    margin: 0;
+}
+
+footer .footer_block .footer_col  .services li{
+    margin-bottom: 25px;
+}
+footer .footer_block .footer_col  .services li a{
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+/* 
 footer .footer_block .footer_info_block{
     display: flex;
     align-items: center;
@@ -460,7 +502,7 @@ footer .footer_block .footer_service ul li a{
 .footer_contact .social_networks ul li img{
     width: 30px;
     height: 30px;
-}
+} */
 
 .header_mobile{
     display: none;
