@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5 | WebForte Tursunboyev O'rinboy</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_top">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-3">
+                            <div class="header_worktime">
+                                <span class="icon">
+                                    <img src="./images/clock.svg" alt="clock">
+                                </span>
+                                <span class="worktime_label">Время работы:</span> Ежедневно, 24/7
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header_city d-flex align-items-center justify-content-end">
+                                <span class="town_icon">
+                                    <img src="./images/location_outline.svg" alt="clock">
+                                </span>
+                                <span class="town_name">Ваш город:</span> 
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Санкт-Петербург
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Москва</a></li>
+                                      <li><a class="dropdown-item" href="#">Владивасток</a></li>
+                                      <li><a class="dropdown-item" href="#">Екатеринбуг</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="brand">
+                                <a href="#">
+                                    <img src="./images/logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="search_product">
+                                <form action="">
+                                    <input type="text" name="search" class="form-control" placeholder="Поиск товара">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header_contacts d-flex justify-content-end align-items-center   ">
+                                <div class="phone_number">
+                                    <a href="tel:88009557505">
+                                        <img src="./images/phone.svg" alt="phone">
+                                        8-800-955-75-05
+                                    </a>
+                                </div>
+                                <div class="cart">
+                                    <a href="#">
+                                        <img src="./images/karzinka.svg" alt="Cart">
+                                        <span class="badge bg-danger">2</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom"></div>
+        </header>
+        <section class="slider"></section>
+        <section class="products sale"></section>
+    </div>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>

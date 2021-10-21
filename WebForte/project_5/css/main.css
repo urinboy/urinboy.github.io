@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rubik';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+header .header_top{
+    font-size: 14px;
+    padding: 15px 0;
+    background-color: #F5F7FA;
+}
+header .header_top .header_worktime{
+    color: #8D9FBB;
+}
+header .header_top .header_worktime .icon{
+    margin-right: 15px;
+}
+header .header_top .header_worktime .worktime_label{
+    font-weight: 500;
+}
+header .header_top .header_city > .town_icon{
+    margin-right: 15px;
+}
+header .header_top .header_city > .town_name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #262732;
+    margin-right: 7px;
+}
+header .header_top .header_city .dropdown button{
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4680FF;
+    border-bottom: 1px solid rgba(88, 152, 248, 0.2);
+}
+header .header_top .header_city .dropdown button::after{
+    content: none;
+}
+header .header_middle{
+    padding: 28px 0;
+}
+
+header .header_middle .search_product input{
+    height: 46px;
+}
+header .header_middle .search_product input::placeholder{
+    color: #8D9FBB;
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+}
+header .header_middle .header_contacts .phone_number{
+    margin-right: 16px;
+}
+header .header_middle .header_contacts .phone_number a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #262732;
+    text-decoration: none;
+}
+header .header_middle .header_contacts .phone_number a img{
+    margin-right: 13px;
+    margin-top: -3px;
+}
+header .header_middle .header_contacts .cart{
+    position: relative;
+}
+header .header_middle .header_contacts .cart a{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBE0ED;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+header .header_middle .header_contacts .cart img{
+    width: 21px;
+    height: 17px;
+}
+header .header_middle .header_contacts .cart .badge{
+    position: absolute;
+    right: -7px;
+    top: -6px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+}
