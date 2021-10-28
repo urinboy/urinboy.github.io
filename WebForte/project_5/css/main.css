@@ -132,6 +132,15 @@ header .header_bottom .catalog .sub_menu{
     /* min-width:261px; */
     width:100%;
     background-color: #fff;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all ease;
+}
+header .header_bottom .catalog:hover .sub_menu{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 header .header_bottom .catalog .sub_menu li a{
     display: block;
@@ -139,20 +148,31 @@ header .header_bottom .catalog .sub_menu li a{
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
+    transition: .5s all ease;
     color: #262732;
     border-bottom: 1px solid #f5f7fa;
 }
 header .header_bottom .catalog .sub_menu li a:last-child{
     border-bottom:none;
 }
+
+header .header_bottom .catalog .sub_menu li a:hover{
+    background-color:rgb(70, 128, 255, 0.16);
+    transition: .5s all ease;
+}
 header .header_bottom .catalog .more{
     position: absolute;
-    bottom:0;
+    bottom:-18px;
     left:0;
+    right:0;
+    margin:auto;
     height: 35px;
     width:35px;
-    display: block;
+    display: flex;
+    justify-content:center;
+    align-items:center; 
     border-radius:50%;
+    background: #4680FF;
 }
 header .header_bottom nav,
 header .header_bottom nav ul{
