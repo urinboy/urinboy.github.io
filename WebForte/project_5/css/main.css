@@ -157,8 +157,8 @@ header .header_bottom .catalog .sub_menu li a:last-child{
 }
 
 header .header_bottom .catalog .sub_menu li a:hover{
-    background-color:rgb(70, 128, 255, 0.16);
-    transition: .5s all ease;
+    color:#4680ff;
+    font-weight: 300;
 }
 header .header_bottom .catalog .more{
     position: absolute;
