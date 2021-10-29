@@ -3,10 +3,15 @@
     padding: 0;
 }
 body{
+    background: #F5F7FA;
     font-family: 'Rubik';
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
+}
+/* HEADER BLOCK */
+header{
+    background: #fff;
 }
 header .header_top{
     font-size: 14px;
@@ -81,7 +86,7 @@ header .header_middle .header_contacts .cart a{
     justify-content: center;
     align-items: center;
     border: 1px solid #DBE0ED;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     border-radius: 4px;
 }
 header .header_middle .header_contacts .cart img{
@@ -217,7 +222,34 @@ header .header_bottom nav ul li a:hover:before{
     width: 100%;
     border-radius: 34px;
 }
+/* HEADER END */
+
+
+/* Slider Block */
 
 .slider{
-    min-height: 2000px;
+    margin-bottom: 40px;
 }
+.slider_block .slider_item{
+    margin-top: 30px;
+    padding: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 22px rgba(70, 128, 255, 0.16);
+    border-radius: 10px;
+}
+
+.slider_block .slider_item .slider_title{
+    font-size:48px;
+    line-height:48px;
+    color:#262732;
+    margin-bottom: 45px;
+}
+.slider_block .slider_item .slider_title span{
+    font-weight: bold;
+}
+.slider_block .slider_item .slider_description{
+    font-size: 16px;
+    line-height: 28px;
+    color: #626474;
+}
+/* Slider Block END */
