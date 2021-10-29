@@ -251,5 +251,32 @@ header .header_bottom nav ul li a:hover:before{
     font-size: 16px;
     line-height: 28px;
     color: #626474;
+    margin-bottom: 40px;
 }
+.slider_block .slider_item .slider_action{
+    display: flex;
+}
+.slider_block .slider_item .slider_action .slider_button a{
+    position: relative;
+    display:inline-block;
+    padding: 13px 105px 13px 30px;
+    color:#fff;
+    background: #F55858;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.slider_block .slider_item .slider_action .slider_button a:before{
+    content: "";
+    background-image: url('../images/thin_long_right.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    right:0;
+    z-index: 5;
+}
+
 /* Slider Block END */
