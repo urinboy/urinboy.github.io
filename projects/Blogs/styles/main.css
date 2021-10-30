@@ -201,6 +201,7 @@ header.header{
 /* works section */
 .works{
     padding-top: 15px;
+    margin-bottom: 120px;
 }
 .works .work_item{
     display: flex;
@@ -258,4 +259,23 @@ header.header{
     color: var(--dark);
 }
 
-       /* works section end */
+/* works section end */
+
+/* Footer secrion */
+.footer_block{
+    width: 260px;
+    margin: 54px auto;
+    transform: translateX(-7%);
+}
+.footer_block .socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+} 
+.footer_block .copy{
+    display: block;
+}
+
+/* Footer secrion end */
