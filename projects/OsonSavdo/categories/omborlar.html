@@ -1,0 +1,56 @@
+<!-- Omborlar bo'limi start -->
+<div class="tab_wrap" style="display: none;">
+
+    <div class="title">Omborlar</div>
+    <!-- Tab Content Start -->
+    <div class="tab_content">
+        <!-- Row Start -->
+        <div class="row">
+            <div class="col">
+                <form action="#">
+                    <label for="tsoni">Tovar </label>
+                    <input type="number" id="tsoni" placeholder="0">
+                    <select name="valyuta" id="valyuta"> 
+                                    <option value="1">Dollor</option>
+                                    <option value="2">So'm</option>
+                                </select>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Tovar mavjud bo'lgan omborlar</label>
+                </form>
+                <a href="#operatsiya"><button class="btn btn-primary">Detalizatsiya</button></a>
+                <button class="btn btn-primary">Eksport Exsel</button>
+                <button class="btn btn-primary">Yangi hamkor</button>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Kodi</th>
+                    <th scope="col">Nomi</th>
+                    <th scope="col">Qo'shimcha ma'lumoti</th>
+                    <th scope="col">Qoldiq</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ombor</td>
+                    <td>Do'kon</td>
+                    <td>0</td>
+                    <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kassa</td>
+                    <td>Do'kon</td>
+                    <td>0</td>
+                    <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Tab Content end -->
+</div>
+<!-- Omborlar bo'limi end -->
