@@ -28,5 +28,5 @@ console.log('4-misol: ',  'v = ', v,  ', t = ', t, ', S = :', S);
 var u_a = 3;
 var u_b = 4;
 var u_c = 5;
-var u_P = (a + b + c);
+var u_P = (u_a + u_b + u_c);
 console.log('5-misol: ', 'a = ', u_a, ', b = ', u_b, ', c = ', u_c, ',  P = ', u_P);
