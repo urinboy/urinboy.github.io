@@ -1,5 +1,5 @@
 /* ** Misol #1** */
-var a = 10;
+    var a = 10;
 var b = 12;
 var c = 16;
 var misol_1 = (a + b + c)/3;
