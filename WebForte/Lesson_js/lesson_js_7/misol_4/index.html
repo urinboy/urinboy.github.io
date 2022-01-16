@@ -16,11 +16,46 @@
         <h3>Tursunboyev O'rinboy</h3>
         <div class="card">
             <div class="card_details">
-                <h4>TEZ ORADA ISHLAB TOPSHIRAMAN!
-                    <br> Kalkulyator dasturi </h4>
-
+                <h4>KALKULYATOR DASTURI</h4>
+                    <form name="form" class="calc">
+                        <input type="text" name="display_calc" readonly="" class="display" placeholder="0">
+                        <table>
+                            <caption class="sayt">TUORMedia.uz</caption>
+                            
+                            <tr>
+                                <td><input class="btn" type="button" value="C" onclick="tozalash()"></td>
+                                <td><input class="btn" type="button" value="<" onclick="ochirish()"></td>
+                                <td><input class="btn" type="button" value="&radic;" onclick="ildiz()"></td>
+                                <td><input class="btn" type="button" value="x²" onclick="kvadrat()"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="btn" type="button" value="1" onclick="kiritish(1)"></td>
+                                <td><input class="btn" type="button" value="2" onclick="kiritish(2)"></td>
+                                <td><input class="btn" type="button" value="3" onclick="kiritish(3)"></td>
+                                <td><input class="btn" type="button" value="/" onclick="kiritish('/')"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="btn" type="button" value="4" onclick="kiritish(4)"></td>
+                                <td><input class="btn" type="button" value="5" onclick="kiritish(5)"></td>
+                                <td><input class="btn" type="button" value="6" onclick="kiritish(6)"></td>
+                                <td><input class="btn" type="button" value="*" onclick="kiritish('*')"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="btn" type="button" value="7" onclick="kiritish(7)"></td>
+                                <td><input class="btn" type="button" value="8" onclick="kiritish(8)"></td>
+                                <td><input class="btn" type="button" value="9" onclick="kiritish(9)"></td>
+                                <td><input class="btn" type="button" value="-" onclick="kiritish('-')"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="btn" type="button" value="0" onclick="kiritish(0)"></td>
+                                <td><input class="btn" type="button" value="." onclick="kiritish('.')"></td>
+                                <td><input class="btn_c" type="button" value="=" onclick="natija()"></td>
+                                <td><input class="btn" type="button" value="+" onclick="kiritish('+')"></td>
+                            </tr>
+                        </table>
+                    </form>
             </div>
-            \
+            
             <ul>
                 <li><a href="../index.html">Asosiy sahifa</a></li>
                 <li><a href="../misol_1/index.html">1 - misol</a></li>
