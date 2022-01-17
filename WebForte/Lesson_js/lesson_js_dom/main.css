@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}  
+
+body {
+    background: #2478DD;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 25px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #021C56;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  nav{
+    position: fixed;
+    z-index: 1;
+    top:0; left:0; right: 0;
+    width: 100%;
+    height: 80px;
+    margin: 60px auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  nav .mainMenu {
+    display: flex;
+  }
+  nav .mainMenu li a{
+    display: inline-block;
+    padding: 16px;
+    text-decoration: uppercase;
+    font-size: 16px;
+    color: #021C56;
+    font-weight: 600;
+  }
+  nav .mainMenu li a:active{
+    width: 100%;
+    background-color: #021C56;
+    font-size: 16px;
+    color: #fff;
+  }
+  nav .mainMenu li a:hover{
+    width: 100%;
+    background-color: #021C56;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 15px;
+  }
+  nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu, .icons i{
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+  }
+  .fa-facebook:hover{color: #4867AA;}
+  .fa-instagram:hover{color: #C23C88;}
+  .fa-telegram:hover{color: #34ACE0;}
+  .fa-github:hover{color: #1B1F23;}
+  .fa-youtube:hover{color: #FE0000;}
+  
+  
+  .admin_pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border: 3px solid #103F85;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  a.link_home{
+    padding-left:  20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #021C56;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.container h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+.container h1,
+h3 {
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card {
+    /* position: relative; */
+    width: 600px;
+    min-height: 200px;
+    margin: 10px auto;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card>img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.card>.card_details {
+    /* position: absolute; */
+}
+
+ol>li>img,
+.misol {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.misol img {
+    /* position: absolute; */
+    width: 70%;
+    margin: 0px auto;
+    padding: 10px 5px;
+}
+
+.card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card ul li:last-child {}
+
+.card ul li a {
+    margin-left: -55px;
+    margin-top: 5px;
+    margin-right: 19px;
+    box-shadow: rgba(66, 66, 100, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid #2478DD;
+}
+
+.card .form {
+    margin: 40px auto;
+}
+
+.card .form .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card .form .inputs .input {
+    height: 20px;
+    padding: 5px 20px;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #2478DD;
+    outline: none;
+    box-shadow: rgba(66, 66, 100, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#natija {
+    color: crimson;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card .natija {
+    /* position: relative; */
+    color: crimson;
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+}
+
+.card .natija p {
+    /* position: relative; */
+    color: crimson;
+    font-size: 14px;
+    line-height: 16 px;
+    font-weight: bold;
+    transition: .4s ease all;
+}
+
+.card .form .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .form button.rang {
+    padding: 30px;
+    border-radius: 50%;
+    border: 1px solid !important;
+    border: none;
+}
+
+.card .form button.rang-qizil:hover {
+    background-color: red;
+}
+
+.card .form button.rang-sariq:hover {
+    background-color: yellow;
+}
+
+.card .form button.rang-yashil:hover {
+    background-color: green;
+}
+
+.card .form button.btn {
+    position: relative;
+    top: 15px;
+    right: -50px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid !important;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgba(14, 32, 199, 0.623);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.card .form button:hover {
+    border: 1px solid rgba(14, 32, 199, 0.623);
+    background-color: #fff;
+    ;
+    color: rgba(14, 32, 199, 0.623);
+}
+
+ul {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+ul li a {
+    padding: 10px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #fff;
+    transition: .3s ease all;
+}
+
+ul li a:hover {
+    background-color: rgba(0, 0, 255, 0.623);
+    color: #fff;
+}
+
+.content {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+        
+/* MEDIA QUERIES */
+@media screen and  (max-width: 1200px){ /* MINI LAPTOP */}
+@media screen and  (max-width: 1025px){ /* BIG PLANSHETS */}
+@media screen and  (max-width: 769px){ /* SMALL PLANSHETS */}
+@media screen and  (max-width: 576px){ /* HORIZONTAL PHONES */}
+@media screen and  (max-width: 480px){ /* PHONES */}
+@media screen and  (max-width: 320px){ /* SMALL PHONES Iphone5 */}
