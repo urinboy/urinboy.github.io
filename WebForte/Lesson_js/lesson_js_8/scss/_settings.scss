@@ -1,0 +1,19 @@
+*{
+  cursor: url(../img/pointer.png), pointer !important;
+}
+body {
+    background: #2478DD;
+}
+.container{
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+
+    
+    h1,
+    h3 {
+        color: #ffffff;
+        text-align: center;
+        text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
