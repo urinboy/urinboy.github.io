@@ -26,6 +26,14 @@ body {
   border-radius: 2px;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.green_button:hover {
+  color: #80b050;
+  background-color: inherit;
+  border: 1px solid #80b050;
 }
 
 header {
@@ -106,11 +114,19 @@ main .free_consulting {
 }
 
 main .free_consulting .free_consulting_title {
+  position: relative;
   font-family: "PT Sans Bold";
   font-size: 18px;
   line-height: 23px;
   max-width: 262px;
   margin-bottom: 20px;
+}
+
+main .free_consulting .free_consulting_title img {
+  position: absolute;
+  right: -40px;
+  width: 24px;
+  height: 16px;
 }
 
 main .free_consulting .free_consulting_action a {
@@ -124,10 +140,117 @@ main .free_consulting .free_consulting_action a:hover {
   background-color: inherit;
 }
 
+main .lp_bankrot {
+  max-width: 648px;
+  padding: 28px 32px;
+  margin-bottom: 60px;
+  background: #F2F2F2;
+  border: 1px solid #D7D7D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+}
+
+main .lp_bankrot .lp_bankrot_title {
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "PT Sans Bold";
+}
+
+main .lp_bankrot .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .lp_bankrot .form .form_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 24px;
+}
+
+main .lp_bankrot .form .form_row input {
+  width: 280px;
+  padding: 16px;
+  border: 1px solid #D7D7D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  outline: none;
+}
+
+main .lp_bankrot .form .form_row input::-webkit-input-placeholder {
+  color: #848484;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+main .lp_bankrot .form .form_row input:-ms-input-placeholder {
+  color: #848484;
+  font-size: 14px;
+  line-height: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+main .lp_bankrot .form .form_row input::-ms-input-placeholder {
+  color: #848484;
+  font-size: 14px;
+  line-height: 18px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+main .lp_bankrot .form .form_row input::placeholder {
+  color: #848484;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .lp_bankrot .form .form_row input[type="submit"]:hover {
+  color: #80b050;
+  background-color: inherit;
+  border: 1px solid #80b050;
+}
+
+main .lp_bankrot .form .form_info {
+  margin-top: 24px;
+}
+
+main .lp_bankrot .form .form_info p {
+  margin-bottom: 8px;
+}
+
 main .main_image {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -36px;
 }
 
 footer {

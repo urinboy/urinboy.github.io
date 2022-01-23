@@ -37,11 +37,19 @@ main{
         margin-bottom: 60px;
 
         .free_consulting_title{
+            position: relative;
             font-family: $pt_sans_b;
             font-size: 18px;
             line-height: 23px;
             max-width: 262px;
             margin-bottom: 20px;
+
+            img{
+                position: absolute;
+                right: -40px;
+                width: 24px;
+                height: 16px;
+            }
         }
         .free_consulting_action{
             a{
@@ -55,9 +63,67 @@ main{
             }
         }
     }
+    .lp_bankrot{
+        max-width: 648px;
+        padding: 28px 32px;
+        margin-bottom: 60px;
+        background: #F2F2F2;
+        border: 1px solid #D7D7D7;
+        box-sizing: border-box;
+        border-radius: 2px;
+
+        .lp_bankrot_title{
+            font-size: 36px;
+            line-height: 42px;
+            font-family: $pt_sans_b;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            
+            .form_row{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 24px;
+                
+                input{
+                    width: 280px;
+                    padding: 16px;
+                    border: 1px solid #D7D7D7;
+                    box-sizing: border-box;
+                    border-radius: 2px;
+                    outline: none;
+
+                    &::placeholder{
+                        color: #848484;
+                        font-size: 14px;
+                        line-height: 18px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                        
+                    &[type="submit"]:hover{
+                        color: $main_button_bg;
+                        background-color: inherit;
+                        border: 1px solid $main_button_bg;
+                    }
+                    
+                }
+            }
+            .form_info{
+                margin-top: 24px;
+                
+                p{
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
     .main_image{
         position: absolute;
         right: 0;
-        top: 0;
+        top: -36px;
     }
 }
