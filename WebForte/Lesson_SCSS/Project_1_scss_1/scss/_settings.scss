@@ -1,0 +1,39 @@
+// Fonts
+$pt_sans_r : 'PT Sans Regular';
+$pt_sans_i : 'PT Sans Italic';
+$pt_sans_b : 'PT Sans Bold';
+$pt_sans_bi : 'PT Sans Bold Italic';
+$pt_sans_cr : 'PT Sans Caption Regular';
+$pt_sans_nr : 'PT Sans Narrow Regular';
+$pt_sans_cb : 'PT Sans Caption Bold';
+$pt_sans_nb : 'PT Sans Narrow Bold';
+
+// other settings
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $pt_sans_r;
+    color: $main_font_color;
+    font-size: 14px;
+}
+.main_section{
+    background: $main_bg-gradient;
+}
+
+// Button
+.green_button{
+    font-family: $pt_sans_b;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    display: inline-block;
+    padding: 14px 16px;
+    background: $main_button_bg;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+}
