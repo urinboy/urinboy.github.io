@@ -1,0 +1,52 @@
+@media (max-width:1200px) {
+    header{
+        padding: 30px 5%;
+    }
+}
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width:768px) {
+    header{
+
+        nav{
+            position: absolute;
+            top:99%; left: 0; right: 0;
+            background-color: $white;
+            border-top: $border;
+            padding: 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: .2s linear;
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            a{
+                display: block;
+                margin: 20px;
+                text-align: center;
+            }
+        }
+        #menu_btn{
+            display: inline-block;
+            transition: .2s linear;
+
+            &.fa-times{
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}

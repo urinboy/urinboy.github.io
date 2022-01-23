@@ -1,0 +1,53 @@
+footer{
+    padding: 30px 0 15px 0;
+    background-color: $dark_bg;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 30px;
+
+        .box{
+
+            h3{
+                color: $white;
+                font-size: 25px;
+                padding-bottom: 20px;
+            }
+
+            a{
+                color: $light_white;
+                font-size: 15px;
+                padding-bottom: 15px;
+                display: block;
+                
+                i{
+                    color: $main_color;
+                    padding-right: 5px;
+                    transition: .2s linear;
+                }
+                
+                &:hover{
+                    i{
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .author{
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        border-top: 1px  solid $light_white;
+        font-size: 20px;
+        color: $white;
+
+        span{
+            color: $main_color;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+header{
+    position: sticky;
+    top:0; left: 0; right: 0;
+    z-index: 10000;
+    box-shadow: $box-shadow;
+    background-color: $white;
+    .logo{
+        font-size: 25px;
+        color: $black;
+    }
+    nav{
+        a{
+            font-size: 20px;
+            margin-left: 20px;
+            color: $black;
+
+            &:hover{
+                color: $main_color;
+            }
+        }
+    }
+    #menu_btn{
+        font-size: 25px;
+        cursor: pointer;
+        color: $black;
+        display: none;
+
+        &:hover{
+            color: $main_color;
+        }
+    }
+}
