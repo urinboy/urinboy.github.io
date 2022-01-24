@@ -7,11 +7,19 @@
 
     .links{
         display: flex;
-        
+        flex-direction: row;
+        align-items: center;
     }
     h3{
         color: #222;
         font-weight: 500;
         box-shadow: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .links{
+        display: block;
+        
     }
 }
