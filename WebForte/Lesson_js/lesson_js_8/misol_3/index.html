@@ -5,38 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript lesson 7.3-misol | Tursunboyev O'rinboy</title>
+    <title>3 - misol | Tursunboyev O'rinboy</title>
     <link rel="shortcut icon" href="https://urinboy.github.io/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
-
+    
 <body>
+    
     <div class="container">
-        <h1>Javascript bo'yicha 7.3-misol - uyga vazifa</h1>
+        <div class="row align-content-center justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+                <h1>Javascriptda DOM bilan ishlash</h1>
+                <h3>Tursunboyev O'rinboy</h3>
+
+                <div class="card w-100">
+                    <h3 class="card-title text-center mt-5">3 -misol </h3>
+                    <div class="card-body">
+                        <p class="card-text px-4">
+                            Select berilgan , selectning ichidagi elementlar : qorbobo, qorqiz, archa, quyon va bo'ri, ushbu elementlarning birortasi tanlanganda, ekranning bir qismida tanlangan elementga mos rasmni chiqaring.
+                        </p>
+
+                        <div class="custom-select mx-auto" style="width:200px; margin:0 auto;">
+                            <select>
+                              <option value="0">Select car:</option>
+                              <option value="1">Audi</option>
+                              <option value="2">BMW</option>
+                              <option value="3">Citroen</option>
+                              <option value="4">Ford</option>
+                              <option value="5">Honda</option>
+                              <option value="6">Jaguar</option>
+                              <option value="7">Land Rover</option>
+                              <option value="8">Mercedes</option>
+                              <option value="9">Mini</option>
+                              <option value="10">Nissan</option>
+                              <option value="11">Toyota</option>
+                              <option value="12">Volvo</option>
+                            </select>
+                          </div>
+
+                        <div class="slidecontainer">
+                          <!-- <input type="range" min="16" max="50" value="16" class="slider" id="myRange">
+                          <p>font-size: <span id="fontSize"></span>;</p> -->
+                        </div>
+                        
+                        <div class="links align-content-center justify-content-between mt-5 text-sm-center">
+                            <a href="../index.html" class="btn btn-outline-primary w-50  w-sm-100  ml-4">Asosiy sahifa</a>
+                            <a href="../misol_1/index.html" class="btn btn-outline-primary w-50 ml-4">1 - misol</a>  
+                        </div>
+                    </div>
+                </div>
+
+
+
+        
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <h1>Javascript bo'yicha  1-misol - uyga vazifa</h1>
         <h3>Tursunboyev O'rinboy</h3>
         <div class="card">
             <div class="card_details">
-                <h4>Shu kiritish maydonigaga nimadur yozgandada, shuning teskarisini ekranga chiqarib turuvchi dastur!</h4>
-
+                <div class="misol">
+                    <img src="../img/kv.png" alt="Kvadrat tenglama"><br>
+                    <h4>Kvadrat tenglamani natijasini ekranga yozib beradgan dastur!</h4>
+                    <img src="../img/D.png" alt="Diskreminant"><br>
+                    <img src="../img/ildizlari.png" alt="Ildizlari">
+                </div>
             </div>
             <form action="" class="form">
                 <div class="inputs">
-                    <label for="str">Nimadir yozing !</label>
-                    <input id="str" class="input" oninput="taqqoslash()" style="width:300px; height: 30px; font-size: 16px;">
+                    <label for="a">a = </label>
+                    <input id="a" class="input">
+                    <label for="b">b = </label>
+                    <input id="b" class="input">
+                    <label for="c">c = </label>
+                    <input id="c" class="input">
                 </div>
                 <div class="misol">
                     <p id="natija">NATIJA</p>
                 </div>
-                <!-- <button type="button" class="btn" onclick="taqqoslash()">Hisoblash</button> -->
+                <button type="button" class="btn" onclick="hisoblash()">Hisoblash</button>
             </form>
             <ul>
-                <li><a href="../index.html">Asosiy sahifa</a></li>
-                <li><a href="../misol_4/index.html">4 - misol</a></li>
+                <li><a href="../index.html" class="btn">Asosiy sahifa</a></li>
+                <li><a href="../misol_2/index.html" class="btn"> 2 - misol</a></li>
             </ul>
         </div>
-        <!-- <h3>Natijani ko'rish uchun F12 yoki Fn + F12 ni bosing!</h3> -->
+        <h3>Natijani ko'rish uchun F12 yoki Fn + F12 ni bosing!</h3>
 
-    </div>
+    </div> -->
     <script src="./index.js"></script>
 </body>
 

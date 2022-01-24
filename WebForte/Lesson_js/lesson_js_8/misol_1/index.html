@@ -30,29 +30,13 @@
                         <h3 class="font">WebForte - TUORMedia.uz</h3>
                         
                         <div class="slidecontainer">
-                          <input type="range" min="16" max="50" value="20" class="slider" id="myRange">
+                          <input type="range" min="16" max="50" value="16" class="slider" id="myRange">
                           <p>font-size: <span id="fontSize"></span>;</p>
                         </div>
                         
-                        <script>
-                        let slider = document.querySelector("#myRange");
-
-                        let matn = document.querySelector(".font");
-                        matn.style.fontSize= slider.value;
-                        
-                        let output = document.querySelector("#fontSize");
-                        output.innerHTML = slider.value;
-                        
-                        slider.oninput = function() {
-                            matn.style.fontSize = this.value;
-                            output.innerHTML = this.value;
-                        }
-                        </script>
-                        
                         <div class="links align-content-center justify-content-between mt-5 text-sm-center">
-                            <a href="../index.html" class="btn btn-outline-primary ml-4">Asosiy sahifa</a>
-                            <!-- <a href="./misol_2/index.html" class="btn btn-outline-primary w-25  w-sm-100 ml-4">2 - misol</a> -->
-                            <a href="../misol_3/index.html" class="btn btn-outline-primary w-sm-100 ml-4">3 - misol</a>  
+                            <a href="../index.html" class="btn btn-outline-primary w-50  w-sm-100  ml-4">Asosiy sahifa</a>
+                            <a href="../misol_2/index.html" class="btn btn-outline-primary w-50  w-sm-100 ml-4">2 - misol</a>
                         </div>
                     </div>
                 </div>
