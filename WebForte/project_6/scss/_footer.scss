@@ -1,3 +1,99 @@
 footer{
-    columns: 12;
+    .footer_top{
+        padding: 40px 0;
+        background-color: #444;
+        color: #fff;
+
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .col-lg-4{
+            padding-right: 50px;
+        }
+        .line{
+            border: none;
+            // opacity: 0.2;
+            border-left: 1px solid #696969;
+            // transform: rotate(90deg);
+            padding-left: 50px;
+        }
+        .footer_about{
+            h4{
+                font-family: $pt_sans_b;
+                font-size: 14px;
+                line-height: 18px;
+        
+                a{
+                    color: $main_font_hover_color;
+                }
+        
+                &:first-child{
+                    margin-bottom: 16px;
+                }
+            }
+            p{
+                margin-bottom: 40px;
+                font-size: 10px;
+                line-height: 13px;
+                color: rgba(255, 255, 255, 0.64);
+            }
+        }
+        .footer_top_title{
+            font-family: $pt_sans_b;
+            font-size: 18px;
+            line-height: 23px;
+            margin-bottom: 12px;
+        }
+        .footer_top_phone{
+            font-family: $pt_sans_b;
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 16px;
+            a{
+            font-family: $pt_sans_b;
+            }
+        }
+        .footer_top_link{
+
+            ul{
+                list-style: none;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+
+                li{
+                    margin-bottom: 12px;
+                    a{
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .servis_item{
+                margin-bottom: 16px;
+
+
+            h4{
+                font-family: $pt_sans_b;
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 0;
+
+            }
+            a{
+                font-size: 10px;
+                line-height: 13px;
+                color: rgba(255, 255, 255, 0.64);
+
+                img{
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        background: rgba(255, 255, 255, 0.12);
+    }
 }

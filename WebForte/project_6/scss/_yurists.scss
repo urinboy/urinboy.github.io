@@ -1,0 +1,67 @@
+.yurists{
+    .yurists_block{
+        .yurist_item{
+            text-align: center;
+             
+            .yurist_image{
+                margin-bottom: 30px;
+                position: relative;
+
+                img{
+                    display: inline;
+                    width: auto;
+                    max-width: 150px;
+                    max-height: 150px;
+                    border-radius: 50%;
+                    z-index: 1;
+                }
+
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                    background-color: #569884;
+                    opacity: 0.12;
+                    border-radius: 50%;
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    right: -10px;
+                    bottom: -10px;
+                    z-index: -1;
+                }
+            }
+            .yurist_name{
+                font-family: $pt_sans_b;
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 10px;
+            }
+            .yurist_position{
+                font-size: 14px;
+                line-height: 18px;
+                color: #848484;
+            }
+        }
+
+        .owl-nav{
+            position: absolute;
+            top: -70px;
+            right: 0;
+
+            .owl-prev,
+            .owl-next{
+                width:32px;
+                height: 28px;
+                color: #fff;
+                background-color: $main_button_bg;
+                border-radius: 14px 2px 2px 14px;
+            }
+            .owl-next{
+                margin-left: 5px;
+                border-radius: 2px 14px 14px 2px;
+            }
+        }
+    }
+}

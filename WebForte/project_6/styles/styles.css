@@ -15,6 +15,10 @@ body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 76.33%, #FFFFFF 100%), linear-gradient(111.34deg, rgba(91, 161, 193, 0.12) 0%, rgba(91, 161, 108, 0.12) 48.44%, rgba(128, 176, 80, 0.12) 100%);
 }
 
+.second_gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 46.8%), linear-gradient(93.47deg, rgba(128, 176, 80, 0.16) 0%, rgba(242, 242, 242, 0.24) 51.56%, rgba(86, 152, 132, 0.16) 100%);
+}
+
 .green_button {
   font-family: "PT Sans Bold";
   font-size: 14px;
@@ -34,6 +38,13 @@ body {
   color: #80b050;
   background-color: inherit;
   border: 1px solid #80b050;
+}
+
+.section_title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 35px;
+  font-family: "PT Sans Bold";
 }
 
 header {
@@ -253,8 +264,201 @@ main .main_image {
   top: -36px;
 }
 
-footer {
-  -webkit-columns: 12;
-          columns: 12;
+.yurists .yurists_block .yurist_item {
+  text-align: center;
+}
+
+.yurists .yurists_block .yurist_item .yurist_image {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.yurists .yurists_block .yurist_item .yurist_image img {
+  display: inline;
+  width: auto;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.yurists .yurists_block .yurist_item .yurist_image::before {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: #569884;
+  opacity: 0.12;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.yurists .yurists_block .yurist_item .yurist_name {
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.yurists .yurists_block .yurist_item .yurist_position {
+  font-size: 14px;
+  line-height: 18px;
+  color: #848484;
+}
+
+.yurists .yurists_block .owl-nav {
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+
+.yurists .yurists_block .owl-nav .owl-prev,
+.yurists .yurists_block .owl-nav .owl-next {
+  width: 32px;
+  height: 28px;
+  color: #fff;
+  background-color: #80b050;
+  border-radius: 14px 2px 2px 14px;
+}
+
+.yurists .yurists_block .owl-nav .owl-next {
+  margin-left: 5px;
+  border-radius: 2px 14px 14px 2px;
+}
+
+.tropheis {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.tropheis .tropheis_block .trophy_item {
+  text-align: center;
+}
+
+.tropheis .tropheis_block .owl-nav {
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+
+.tropheis .tropheis_block .owl-nav .owl-prev,
+.tropheis .tropheis_block .owl-nav .owl-next {
+  width: 32px;
+  height: 28px;
+  color: #fff;
+  background-color: #80b050;
+  border-radius: 14px 2px 2px 14px;
+}
+
+.tropheis .tropheis_block .owl-nav .owl-next {
+  margin-left: 5px;
+  border-radius: 2px 14px 14px 2px;
+}
+
+footer .footer_top {
+  padding: 40px 0;
+  background-color: #444;
+  color: #fff;
+}
+
+footer .footer_top a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer_top .col-lg-4 {
+  padding-right: 50px;
+}
+
+footer .footer_top .line {
+  border: none;
+  border-left: 1px solid #696969;
+  padding-left: 50px;
+}
+
+footer .footer_top .footer_about h4 {
+  font-family: "PT Sans Bold";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer .footer_top .footer_about h4 a {
+  color: #569884;
+}
+
+footer .footer_top .footer_about h4:first-child {
+  margin-bottom: 16px;
+}
+
+footer .footer_top .footer_about p {
+  margin-bottom: 40px;
+  font-size: 10px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+footer .footer_top .footer_top_title {
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 12px;
+}
+
+footer .footer_top .footer_top_phone {
+  font-family: "PT Sans Bold";
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 16px;
+}
+
+footer .footer_top .footer_top_phone a {
+  font-family: "PT Sans Bold";
+}
+
+footer .footer_top .footer_top_link ul {
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer_top .footer_top_link ul li {
+  margin-bottom: 12px;
+}
+
+footer .footer_top .footer_top_link ul li a {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer .footer_top .servis_item {
+  margin-bottom: 16px;
+}
+
+footer .footer_top .servis_item h4 {
+  font-family: "PT Sans Bold";
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+footer .footer_top .servis_item a {
+  font-size: 10px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+footer .footer_top .servis_item a img {
+  margin-left: 12px;
+}
+
+footer .footer_bottom {
+  background: rgba(255, 255, 255, 0.12);
 }
 /*# sourceMappingURL=styles.css.map */
