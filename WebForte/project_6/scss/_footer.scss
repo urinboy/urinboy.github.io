@@ -7,6 +7,7 @@ footer{
         a{
             color: #fff;
             text-decoration: none;
+            
         }
         .col-lg-4{
             padding-right: 50px;
@@ -51,7 +52,11 @@ footer{
             line-height: 42px;
             margin-bottom: 16px;
             a{
-            font-family: $pt_sans_b;
+                font-family: $pt_sans_b;
+                transition: .3s all ease;
+                &:hover{
+                    color: $main_font_hover_color;
+                }
             }
         }
         .footer_top_link{
@@ -67,6 +72,11 @@ footer{
                     a{
                         font-size: 14px;
                         line-height: 18px;
+                        transition: .3s all ease;
+
+                        &:hover{
+                            color: $main_font_hover_color;
+                        }
                     }
                 }
             }
@@ -86,6 +96,11 @@ footer{
                 font-size: 10px;
                 line-height: 13px;
                 color: rgba(255, 255, 255, 0.64);
+                transition: .3s all ease;
+            
+                &:hover{
+                    color: $main_font_hover_color;
+                }
 
                 img{
                     margin-left: 12px;
@@ -94,6 +109,54 @@ footer{
         }
     }
     .footer_bottom{
-        background: rgba(255, 255, 255, 0.12);
+        background-color: #5A5A5A;
+        padding: 16px 0;
+        .footer_info{
+            color: #fff;
+            
+            ul{
+                margin: 0;
+                display: flex;
+                align-items: center;
+                list-style: none;
+            }
+            li{
+                margin-right: 12px;
+                font-size: 10px;
+                line-height: 13px;
+
+                a{
+                    color: #fff;
+
+                    &:hover{
+                        color: $main_font_hover_color;
+                    }
+                }
+            }
+        }
+        .footer_social{
+            ul{
+                margin: 0;
+                display: flex;
+                align-items: center;
+                list-style: none;
+            }
+            li{
+                margin-left: 20px;
+
+                a{
+                    i{
+                        color: #C4C4C4;
+                        font-size: 24px;
+                    }
+                    
+                    &:hover{
+                        i{
+                            color: $main_font_hover_color;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
