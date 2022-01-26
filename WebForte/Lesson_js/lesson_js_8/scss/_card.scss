@@ -1,3 +1,7 @@
+ul{
+    list-style-type: none;
+}
+
 .card {
     position: relative;
     margin: 10px auto;
@@ -5,21 +9,36 @@
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-    .links{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
     h3{
         color: #222;
         font-weight: 500;
         box-shadow: none;
     }
+    .card-body{
+        
+        .natija{
+            height: 70px;
+        }
+    }
+    .links{
+        margin-top: 50px;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .links{
-        display: block;
-        
+        margin-top: 50px;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
     }
 }
