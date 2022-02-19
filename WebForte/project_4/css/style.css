@@ -407,6 +407,7 @@ footer{
 footer .footer_block{
     display: flex;
     align-items: top;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 40px;
@@ -479,11 +480,18 @@ footer .footer_block .footer_col .contact_item p{
     margin-bottom: 16px;
 }
 
-footer .footer_block .footer_col .contact_item .contact_value .social_networks{
+footer .footer_block .footer_col .contact_item.social_networks{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .footer_block .footer_col .contact_item.social_networks ul img{
+    width: 30px;
+}
+footer .footer_block .footer_col .contact_item.social_networks ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 
 footer .footer_block .footer_col .contact_item  .social_networks ul li:first-child{
@@ -508,6 +516,16 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
 @media (max-width: 576px){ /* MINI LAPTOP */
 }
 @media (max-width: 480px){ /* MINI LAPTOP */
+    
+    .section_title{
+        font-size: 22px;
+        line-height: 145.7%;
+
+    }
+    .select_description p{
+        font-size: 14px;
+        line-height: 145.7%;
+    }
     .wrapper{
         overflow: hidden;
     }
@@ -521,30 +539,67 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding: 0 10px;
     }
     
     .header_mobile .phone_number a{
-        font-size: 21px;
         font-family: 'Montserrat Alternates Bold';
+        font-size: 21px;
         line-height: 25px;
         text-decoration: none;
         color: #000;
     }
-    .header_mobile .phone_number a::before{
-        content: '';
-        display: block;
-        width: 18px;
-        height: 18px;
-        background-image: url('../images/phone.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        z-index: 61;
-        left: -30px;
-        top: 3px;
+    .main_block .akaxon{
+        position: relative;
+        width: 100%;
     }
-    /* .main_block .main_r */
+    
+    .main_block{
+        padding-top: 60px;
+    }
+    .main_block .main_left .main_title{
+        font-size: 25px;
+        line-height: 145.7%;
+        text-align: center;
+    }
+    
+    .main_block .main_left .main_form{
+        width: 322px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    .main_block .main_left .main_form form{
+        margin: 0 auto;
+    }
+    .about{
+        padding: 0 10px;
+    }
+    .about .advantages{
+        padding: 30px;
+        transform: translateY(-155px);
+        margin-bottom: -85px;
+    }
+    .about .advantages .advantage_item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about .services{
+        overflow-x: scroll;
+        min-height: 555px;
+    }
+    .about .services .service_item{
+        width: 263px;
+        margin-right: 20px;
+    }
+    .why_me{
+        padding: 22px;
+    }
+
+    footer .footer_block .footer_col{
+        width: 100%;
+    }
+
 }
 @media (max-width: 320px){ /* MINI LAPTOP */
 }

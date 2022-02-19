@@ -1,0 +1,60 @@
+/* === UrinboyDev | TUORMedia.uz === */
+/* === 01.02.2022 === */
+
+/* === Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --tcolor: #7d2ae8;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: var(--tcolor);
+    z-index: 100;
+}
+.card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.card{
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-color: var(--tcolor);
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
