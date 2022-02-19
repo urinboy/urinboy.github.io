@@ -532,10 +532,9 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
 @media (max-width: 1025px){ /* BIG PLANSHETS */
 }
 @media (max-width: 769px){ /* SMALL PLANSHETS */
+    
 }
-@media (max-width: 576px){ /* MINI LAPTOP */
-}
-@media (max-width: 480px){ /* MINI LAPTOP */
+@media (max-width: 576px) { /* MINI LAPTOP */
     
     .section_title{
         font-size: 22px;
