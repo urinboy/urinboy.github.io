@@ -69,7 +69,7 @@ header{
     top: 0;
     background-color: #f1f3fc;
     border-bottom: 1px solid #ddd;
-    z-index: 30;
+    z-index: 50;
 }
 header .header_block{
     display: flex;
@@ -521,6 +521,9 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
 .header_mobile{
     display: none;
 }
+.mobile{
+    display: none;
+}
 
 /* MEDIA QUERIES */
 
@@ -644,29 +647,57 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
         padding: 55px 10px;
     }
     
-.why_me .why_me_items .why_item{
-    width: 100%;
-    padding: 0 55px 30px 55px;
- }
- .form{
-     padding: 60px 15px 0 15px;
- }
-.form .form_block{
-     display: flex;
- }
- .form .form_block .form_akaxon{
-     order: 2;
- }
- .form .form_block .form_register{
-     order: 1;
- }
- .form .form_block .form_akaxon,
- .form .form_block .form_register{
-     flex: 0 0 auto;
-     width: 100%;
- }
+    .why_me .why_me_items .why_item{
+        width: 100%;
+        padding: 0 55px 30px 55px;
+    }
+    .form{
+        padding: 60px 15px 0 15px;
+    }
+    .form .form_block{
+        display: flex;
+    }
+    .form .form_block .form_akaxon{
+        order: 2;
+    }
+    .form .form_block .form_register{
+        order: 1;
+    }
+    .form .form_block .form_akaxon,
+    .form .form_block .form_register{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .contacts_block{
+        padding: 35px 0 400px 0;
+    }
+    .contacts_block .contact_card{
+        padding: 60px 28px 40px 28px;
+        width: 100%;
+    }
+    footer {
+        padding: 20px 14px;
+    }
     footer .footer_block .footer_col{
         width: 100%;
+        margin-bottom: 25px;
+
+    }
+    footer .footer_block .footer_col .footer_about .footer_logo{
+        margin-bottom: 0px;
+    }
+    footer .footer_block .footer_col .footer_about .footer_confidential{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FEFEFE;
+    }
+    .mobile p{
+        margin-bottom: 16px;
     }
 
 }
