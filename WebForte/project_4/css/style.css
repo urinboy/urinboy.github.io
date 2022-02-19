@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -41,7 +42,7 @@ body{
     color: #fff;
     box-shadow: 0px 2px 4px #BE9400;
     border-radius: 6px;
-    color: #000;
+    /* color: #000; */
 }
 .section_title{
     font-family: 'Montserrat Alternates Bold';
@@ -279,6 +280,7 @@ header .header_block .contacts .call_back a{
 .why_me .why_me_items{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .why_me .why_me_items .why_item{
     flex: 0 0 auto;
@@ -304,9 +306,13 @@ header .header_block .contacts .call_back a{
 .form .form_block{
     padding: 60px 0 0 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
+.form .form_block .form_akaxon{
+    order: 1;
+}
 .form .form_block .form_akaxon img{
     width: 100%;
 }
@@ -317,11 +323,22 @@ header .header_block .contacts .call_back a{
     line-height: 120%;
 }
 .form .form_block .form_register{
+    order: 2;
     width: 433px;
 }
 
 .form .form_block .form_register form .form_item{
     margin-bottom: 20px ;
+}
+.form_item button{
+    transition: all .4s ease;
+}
+
+
+.form_item button:hover{
+    background-color: #BE9400;
+    color: #fff;
+    box-shadow: 0px 2px 4px #BE9400;
 }
 .form .form_block .form_register form .check{
     padding: 33px 0 112px 0;
@@ -526,6 +543,10 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
         font-size: 14px;
         line-height: 145.7%;
     }
+    .secttion_subtitle{
+        font-size: 14px;
+        line-height: 17px;
+    }
     .wrapper{
         overflow: hidden;
     }
@@ -592,14 +613,58 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
         overflow-x: scroll;
         min-height: 555px;
     }
+    
+     /* width */
+     .about .services::-moz-scrollbar,
+     .about .services::-webkit-scrollbar {
+        height: 10px;
+    }
+    
+    /* Track */
+    .about .services::-ms-scrollbar-track,
+    .about .services::-webkit-scrollbar-track {
+        background: #ebebeb;
+    }
+    
+    /* Handle */
+    .about .services::-ms-scrollbar-thumb,
+    .about .services::-webkit-scrollbar-thumb {
+        background: #0572cb;
+    }
+    
+    /* Handle on hover */
+    .about .services::-webkit-scrollbar-thumb:hover {
+        background: red;
+    } 
     .about .services .service_item{
         width: 263px;
         margin-right: 20px;
     }
     .why_me{
-        padding: 22px;
+        padding: 55px 10px;
     }
-
+    
+.why_me .why_me_items .why_item{
+    width: 100%;
+    padding: 0 55px 30px 55px;
+ }
+ .form{
+     padding: 60px 15px 0 15px;
+ }
+.form .form_block{
+     display: flex;
+ }
+ .form .form_block .form_akaxon{
+     order: 2;
+ }
+ .form .form_block .form_register{
+     order: 1;
+ }
+ .form .form_block .form_akaxon,
+ .form .form_block .form_register{
+     flex: 0 0 auto;
+     width: 100%;
+ }
     footer .footer_block .footer_col{
         width: 100%;
     }
