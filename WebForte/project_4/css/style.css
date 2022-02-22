@@ -260,8 +260,8 @@ header .header_block .contacts .call_back a{
     opacity: 0;
 }
 .about .services .service_item:hover .service_action{
-    padding: 0 19px 23px;
-    height: 63px;
+    padding:0px 23px;
+    height: 75px;
     opacity: 1;
 }
 .about .services .service_item .service_action .button{
@@ -524,6 +524,23 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
 .mobile{
     display: none;
 }
+.arrow-up{
+    position: fixed;
+    z-index: 99999;
+
+} 
+/* .arrow-up a{
+    transition: .5s ease all;
+}  
+.arrow-up   img{
+    position: fixed;
+    top: 100px;
+    right: 140px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    
+} */
 
 /* MEDIA QUERIES */
 
@@ -532,7 +549,7 @@ footer .footer_block .footer_col .contact_item  .social_networks ul li:first-chi
 @media (max-width: 1025px){ /* BIG PLANSHETS */
 }
 @media (max-width: 769px){ /* SMALL PLANSHETS */
-    
+
 }
 @media (max-width: 576px) { /* MINI LAPTOP */
     

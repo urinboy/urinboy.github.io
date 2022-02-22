@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./fonts/style.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="body">
 
     <div class="wrapper">
         <!-- <div id="preloader"></div> -->
@@ -30,6 +30,40 @@
                                     <li><a href="#">Контакты</a></li>
                                     <li><a href="#">Радио рекорд</a></li>
                                 </ul>
+
+                                <!-- <style>
+                                    button{
+                                        background-color: inherit;
+                                        border: none;
+                                    }
+                                    .rotate-arrow {
+                                        transform: rotate(180deg);
+                                        transition: transform 0.5s;
+                                    }
+                                </style>
+                                <script>
+                                    function showItems() {
+                                        var items = document.getElementsByClassName("hidden-items")[0];
+                                        var arrow = document.getElementsByClassName("arrow-down")[0]
+
+                                        if (items.style.display == "block") {
+                                            items.style.display = "none";
+                                            arrow.classList.toggle('rotate-arrow')
+
+                                        } else {
+                                            items.style.display = "block";
+                                            arrow.classList.toggle('rotate-arrow')
+                                        }
+                                    } 
+                                </script>
+
+                                <button class="button-arrow" onClick="showItems()"> <img class="arrow-down" src="./images/arrow-up.png" width="30" height="30">  </button>
+
+                                <ul class="hidden-items">
+                                   <li>Red</li>
+                                   <li>Blue</li>
+                                   <li>Yellow</li>
+                                </ul> -->
                             </nav>
                         </div>
                         <div class="contacts">
@@ -87,6 +121,11 @@
                 </div>
             </div>
         </section>
+        <div class="arrow-up">
+            <a href="#body">
+                <img src="./images/arrow-up.png" alt="up">
+            </a>
+        </div>
         <section class="about">
             <div class="container">
                 <div class="advantages">
